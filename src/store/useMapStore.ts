@@ -99,6 +99,7 @@ interface SavedSettings {
   hideCompleted?: boolean;
   sidebarOpen?: boolean;
   selectedZonaiPart?: string | null;
+  activeFarmingRouteId?: string | null;
 }
 
 function getInitialCompleted(): Record<string, boolean> {
@@ -126,6 +127,7 @@ function persistSettings(data: {
   hideCompleted: boolean;
   sidebarOpen: boolean;
   selectedZonaiPart: string | null;
+  activeFarmingRouteId?: string | null;
 }) {
   try {
     const payload: SavedSettings = {
@@ -135,6 +137,7 @@ function persistSettings(data: {
       hideCompleted: data.hideCompleted,
       sidebarOpen: data.sidebarOpen,
       selectedZonaiPart: data.selectedZonaiPart,
+      activeFarmingRouteId: data.activeFarmingRouteId,
     };
     localStorage.setItem(SETTINGS_STORAGE_KEY, JSON.stringify(payload));
   } catch (e) {
@@ -218,7 +221,7 @@ export const useMapStore = create<MapState>((set, get) => ({
   customPins: getInitialCustomPins(),
   pinModalTarget: null,
   isAddingPinMode: false,
-  activeFarmingRouteId: null,
+  activeFarmingRouteId: initialSettings.activeFarmingRouteId || null,
   completedItems: getInitialCompleted(),
   hideCompleted: initialSettings.hideCompleted || false,
   sidebarOpen: initialSettings.sidebarOpen !== undefined ? initialSettings.sidebarOpen : true,
@@ -239,7 +242,9 @@ export const useMapStore = create<MapState>((set, get) => ({
       hideCompleted: get().hideCompleted,
       sidebarOpen: get().sidebarOpen,
       selectedZonaiPart: get().selectedZonaiPart,
+      activeFarmingRouteId: get().activeFarmingRouteId,
     });
+    scheduleCloudSync(get);
   },
 
   setSearchQuery: (query) => set({ searchQuery: query }),
@@ -271,7 +276,9 @@ export const useMapStore = create<MapState>((set, get) => ({
       hideCompleted: get().hideCompleted,
       sidebarOpen: get().sidebarOpen,
       selectedZonaiPart: get().selectedZonaiPart,
+      activeFarmingRouteId: get().activeFarmingRouteId,
     });
+    scheduleCloudSync(get);
   },
 
   enableAllCategories: () => {
@@ -284,7 +291,9 @@ export const useMapStore = create<MapState>((set, get) => ({
       hideCompleted: get().hideCompleted,
       sidebarOpen: get().sidebarOpen,
       selectedZonaiPart: get().selectedZonaiPart,
+      activeFarmingRouteId: get().activeFarmingRouteId,
     });
+    scheduleCloudSync(get);
   },
 
   disableAllCategories: () => {
@@ -297,7 +306,9 @@ export const useMapStore = create<MapState>((set, get) => ({
       hideCompleted: get().hideCompleted,
       sidebarOpen: get().sidebarOpen,
       selectedZonaiPart: get().selectedZonaiPart,
+      activeFarmingRouteId: get().activeFarmingRouteId,
     });
+    scheduleCloudSync(get);
   },
 
   toggleDragons: () => {
@@ -315,7 +326,9 @@ export const useMapStore = create<MapState>((set, get) => ({
       hideCompleted: get().hideCompleted,
       sidebarOpen: get().sidebarOpen,
       selectedZonaiPart: get().selectedZonaiPart,
+      activeFarmingRouteId: get().activeFarmingRouteId,
     });
+    scheduleCloudSync(get);
   },
 
   setSelectedZonaiPart: (part) => {
@@ -327,7 +340,9 @@ export const useMapStore = create<MapState>((set, get) => ({
       hideCompleted: get().hideCompleted,
       sidebarOpen: get().sidebarOpen,
       selectedZonaiPart: part,
+      activeFarmingRouteId: get().activeFarmingRouteId,
     });
+    scheduleCloudSync(get);
   },
 
   setSelectedMarker: (marker) => set({ selectedMarker: marker }),
@@ -354,7 +369,9 @@ export const useMapStore = create<MapState>((set, get) => ({
       hideCompleted: get().hideCompleted,
       sidebarOpen: get().sidebarOpen,
       selectedZonaiPart: get().selectedZonaiPart,
+      activeFarmingRouteId: get().activeFarmingRouteId,
     });
+    scheduleCloudSync(get);
   },
 
   clearTransitionToast: () => set({ transitionToast: null }),
@@ -371,7 +388,19 @@ export const useMapStore = create<MapState>((set, get) => ({
 
   closePinModal: () => set({ pinModalTarget: null }),
 
-  setActiveFarmingRoute: (routeId) => set({ activeFarmingRouteId: routeId }),
+  setActiveFarmingRoute: (routeId) => {
+    set({ activeFarmingRouteId: routeId });
+    persistSettings({
+      activeLayer: get().activeLayer,
+      activeCategories: get().activeCategories,
+      showDragons: get().showDragons,
+      hideCompleted: get().hideCompleted,
+      sidebarOpen: get().sidebarOpen,
+      selectedZonaiPart: get().selectedZonaiPart,
+      activeFarmingRouteId: routeId,
+    });
+    scheduleCloudSync(get);
+  },
 
   addCustomPin: (pinData) => {
     const newPin: CustomPin = {
@@ -421,7 +450,9 @@ export const useMapStore = create<MapState>((set, get) => ({
       hideCompleted: next,
       sidebarOpen: get().sidebarOpen,
       selectedZonaiPart: get().selectedZonaiPart,
+      activeFarmingRouteId: get().activeFarmingRouteId,
     });
+    scheduleCloudSync(get);
   },
 
   setSidebarOpen: (open) => {
@@ -433,7 +464,9 @@ export const useMapStore = create<MapState>((set, get) => ({
       hideCompleted: get().hideCompleted,
       sidebarOpen: open,
       selectedZonaiPart: get().selectedZonaiPart,
+      activeFarmingRouteId: get().activeFarmingRouteId,
     });
+    scheduleCloudSync(get);
   },
 
   resetAllProgress: () => {
@@ -471,16 +504,56 @@ export const useMapStore = create<MapState>((set, get) => ({
       persistCompleted(d1Completed);
       persistCustomPins(d1Pins);
 
+      const restoredCategories = Array.isArray(d1Settings.activeCategories)
+        ? new Set<string>(d1Settings.activeCategories)
+        : get().activeCategories;
+
+      const restoredZonaiPart = d1Settings.selectedZonaiPart !== undefined
+        ? d1Settings.selectedZonaiPart
+        : get().selectedZonaiPart;
+
+      const restoredDragons = d1Settings.showDragons !== undefined
+        ? d1Settings.showDragons
+        : get().showDragons;
+
+      const restoredHideCompleted = d1Settings.hideCompleted !== undefined
+        ? d1Settings.hideCompleted
+        : get().hideCompleted;
+
+      const restoredLayer = d1Settings.activeLayer || get().activeLayer;
+      const restoredRouteId = d1Settings.activeFarmingRouteId !== undefined
+        ? d1Settings.activeFarmingRouteId
+        : get().activeFarmingRouteId;
+      const restoredSidebarOpen = d1Settings.sidebarOpen !== undefined
+        ? d1Settings.sidebarOpen
+        : get().sidebarOpen;
+
+      persistSettings({
+        activeLayer: restoredLayer,
+        activeCategories: restoredCategories,
+        showDragons: restoredDragons,
+        hideCompleted: restoredHideCompleted,
+        sidebarOpen: restoredSidebarOpen,
+        selectedZonaiPart: restoredZonaiPart,
+        activeFarmingRouteId: restoredRouteId,
+      });
+
       set({
         currentUser: data.user,
         authToken: data.token,
         completedItems: d1Completed,
         customPins: d1Pins,
-        activeLayer: d1Settings.activeLayer || get().activeLayer,
+        activeLayer: restoredLayer,
+        activeCategories: restoredCategories,
+        showDragons: restoredDragons,
+        hideCompleted: restoredHideCompleted,
+        selectedZonaiPart: restoredZonaiPart,
+        activeFarmingRouteId: restoredRouteId,
+        sidebarOpen: restoredSidebarOpen,
         isAuthModalOpen: false,
         lastSyncedAt: data.state?.updatedAt || new Date().toISOString(),
         transitionToast: {
-          message: `✨ Logged in as ${data.user.username}! D1 Cloud State Loaded.`,
+          message: `✨ Logged in as ${data.user.username}! All progress & sidebar settings loaded.`,
           type: 'ascend',
         },
       });
@@ -493,6 +566,7 @@ export const useMapStore = create<MapState>((set, get) => ({
 
   register: async (username, password) => {
     try {
+      const state = get();
       const res = await fetch('/api/auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -500,12 +574,16 @@ export const useMapStore = create<MapState>((set, get) => ({
           username,
           password,
           initialState: {
-            completedItems: get().completedItems,
-            customPins: get().customPins,
+            completedItems: state.completedItems,
+            customPins: state.customPins,
             settings: {
-              activeLayer: get().activeLayer,
-              showDragons: get().showDragons,
-              hideCompleted: get().hideCompleted,
+              activeLayer: state.activeLayer,
+              activeCategories: Array.from(state.activeCategories),
+              showDragons: state.showDragons,
+              hideCompleted: state.hideCompleted,
+              selectedZonaiPart: state.selectedZonaiPart,
+              activeFarmingRouteId: state.activeFarmingRouteId,
+              sidebarOpen: state.sidebarOpen,
             },
           },
         }),
@@ -554,6 +632,7 @@ export const useMapStore = create<MapState>((set, get) => ({
     if (!token) return;
     set({ isSyncing: true });
     try {
+      const state = get();
       const res = await fetch('/api/user/sync', {
         method: 'POST',
         headers: {
@@ -561,12 +640,16 @@ export const useMapStore = create<MapState>((set, get) => ({
           Authorization: `Bearer ${token}`,
         },
         body: JSON.stringify({
-          completedItems: get().completedItems,
-          customPins: get().customPins,
+          completedItems: state.completedItems,
+          customPins: state.customPins,
           settings: {
-            activeLayer: get().activeLayer,
-            showDragons: get().showDragons,
-            hideCompleted: get().hideCompleted,
+            activeLayer: state.activeLayer,
+            activeCategories: Array.from(state.activeCategories),
+            showDragons: state.showDragons,
+            hideCompleted: state.hideCompleted,
+            selectedZonaiPart: state.selectedZonaiPart,
+            activeFarmingRouteId: state.activeFarmingRouteId,
+            sidebarOpen: state.sidebarOpen,
           },
         }),
       });
@@ -602,11 +685,55 @@ export const useMapStore = create<MapState>((set, get) => ({
         if (data.state) {
           const cloudCompleted = data.state.completedItems || {};
           const cloudPins = data.state.customPins || [];
+          const cloudSettings = data.state.settings || {};
+
           persistCompleted(cloudCompleted);
           persistCustomPins(cloudPins);
+
+          const restoredCategories = Array.isArray(cloudSettings.activeCategories)
+            ? new Set<string>(cloudSettings.activeCategories)
+            : get().activeCategories;
+
+          const restoredZonaiPart = cloudSettings.selectedZonaiPart !== undefined
+            ? cloudSettings.selectedZonaiPart
+            : get().selectedZonaiPart;
+
+          const restoredDragons = cloudSettings.showDragons !== undefined
+            ? cloudSettings.showDragons
+            : get().showDragons;
+
+          const restoredHideCompleted = cloudSettings.hideCompleted !== undefined
+            ? cloudSettings.hideCompleted
+            : get().hideCompleted;
+
+          const restoredLayer = cloudSettings.activeLayer || get().activeLayer;
+          const restoredRouteId = cloudSettings.activeFarmingRouteId !== undefined
+            ? cloudSettings.activeFarmingRouteId
+            : get().activeFarmingRouteId;
+          const restoredSidebarOpen = cloudSettings.sidebarOpen !== undefined
+            ? cloudSettings.sidebarOpen
+            : get().sidebarOpen;
+
+          persistSettings({
+            activeLayer: restoredLayer,
+            activeCategories: restoredCategories,
+            showDragons: restoredDragons,
+            hideCompleted: restoredHideCompleted,
+            sidebarOpen: restoredSidebarOpen,
+            selectedZonaiPart: restoredZonaiPart,
+            activeFarmingRouteId: restoredRouteId,
+          });
+
           set({
             completedItems: cloudCompleted,
             customPins: cloudPins,
+            activeLayer: restoredLayer,
+            activeCategories: restoredCategories,
+            showDragons: restoredDragons,
+            hideCompleted: restoredHideCompleted,
+            selectedZonaiPart: restoredZonaiPart,
+            activeFarmingRouteId: restoredRouteId,
+            sidebarOpen: restoredSidebarOpen,
           });
         }
       } else {
