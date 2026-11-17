@@ -1,0 +1,5882 @@
+[
+  {
+    "id": "area-276757",
+    "name": "Temple of Time",
+    "category": "area",
+    "layer": "sky",
+    "position": {
+      "x": 456,
+      "y": 1000,
+      "z": 800
+    },
+    "lat": 800,
+    "lng": 456,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in the Sky."
+  },
+  {
+    "id": "area-276913",
+    "name": "Tenoko Island",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4012,
+      "y": 100,
+      "z": 2955
+    },
+    "lat": 2955,
+    "lng": 4012,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277067",
+    "name": "Shatterback Point",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3757,
+      "y": 100,
+      "z": -388
+    },
+    "lat": -388,
+    "lng": 3757,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277068",
+    "name": "Lulu Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3723,
+      "y": 100,
+      "z": -590
+    },
+    "lat": -590,
+    "lng": 3723,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277069",
+    "name": "Mikau Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3557,
+      "y": 100,
+      "z": -568
+    },
+    "lat": -568,
+    "lng": 3557,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277070",
+    "name": "East Reservoir Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3669,
+      "y": 100,
+      "z": -167
+    },
+    "lat": -167,
+    "lng": 3669,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277071",
+    "name": "Ruto Precipice",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3383,
+      "y": 100,
+      "z": -248
+    },
+    "lat": -248,
+    "lng": 3383,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277073",
+    "name": "Ruto Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3157,
+      "y": 100,
+      "z": -179
+    },
+    "lat": -179,
+    "lng": 3157,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277074",
+    "name": "Rutala Dam",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3566,
+      "y": 100,
+      "z": 85
+    },
+    "lat": 85,
+    "lng": 3566,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277075",
+    "name": "Veiled Falls",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3074,
+      "y": 100,
+      "z": -452
+    },
+    "lat": -452,
+    "lng": 3074,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277076",
+    "name": "Ralis Pond",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2932,
+      "y": 100,
+      "z": -251
+    },
+    "lat": -251,
+    "lng": 2932,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277077",
+    "name": "Rutala River",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2482,
+      "y": 100,
+      "z": 177
+    },
+    "lat": 177,
+    "lng": 2482,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277079",
+    "name": "Zora River",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2684,
+      "y": 100,
+      "z": -357
+    },
+    "lat": -357,
+    "lng": 2684,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277080",
+    "name": "Bank of Wishes",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2758,
+      "y": 100,
+      "z": -84
+    },
+    "lat": -84,
+    "lng": 2758,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277081",
+    "name": "Tabahl Woods",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2592,
+      "y": 100,
+      "z": -173
+    },
+    "lat": -173,
+    "lng": 2592,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277082",
+    "name": "Toto Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3475,
+      "y": 100,
+      "z": -880
+    },
+    "lat": -880,
+    "lng": 3475,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277083",
+    "name": "Upland Zorana",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3148,
+      "y": 100,
+      "z": -879
+    },
+    "lat": -879,
+    "lng": 3148,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277084",
+    "name": "Akkala Falls",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3736,
+      "y": 100,
+      "z": -1166
+    },
+    "lat": -1166,
+    "lng": 3736,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277085",
+    "name": "South Lake Akkala",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3600,
+      "y": 100,
+      "z": -1085
+    },
+    "lat": -1085,
+    "lng": 3600,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277086",
+    "name": "Lake Akkala",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3874,
+      "y": 100,
+      "z": -1463
+    },
+    "lat": -1463,
+    "lng": 3874,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277087",
+    "name": "Torin Wetland",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3647,
+      "y": 100,
+      "z": -1615
+    },
+    "lat": -1615,
+    "lng": 3647,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277088",
+    "name": "Malin Bay",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4415,
+      "y": 100,
+      "z": -1877
+    },
+    "lat": -1877,
+    "lng": 4415,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277089",
+    "name": "East Akkala Beach",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4348,
+      "y": 100,
+      "z": -2369
+    },
+    "lat": -2369,
+    "lng": 4348,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277090",
+    "name": "Rist Peninsula",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4578,
+      "y": 100,
+      "z": -2183
+    },
+    "lat": -2183,
+    "lng": 4578,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277091",
+    "name": "East Akkala Plains",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3978,
+      "y": 100,
+      "z": -2048
+    },
+    "lat": -2048,
+    "lng": 3978,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277092",
+    "name": "Ordorac Quarry",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3636,
+      "y": 100,
+      "z": -2515
+    },
+    "lat": -2515,
+    "lng": 3636,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277093",
+    "name": "Octorok Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4071,
+      "y": 100,
+      "z": -2457
+    },
+    "lat": -2457,
+    "lng": 4071,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277094",
+    "name": "North Akkala Valley",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3801,
+      "y": 100,
+      "z": -2817
+    },
+    "lat": -2817,
+    "lng": 3801,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277095",
+    "name": "Shadow Pass",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3401,
+      "y": 100,
+      "z": -2236
+    },
+    "lat": -2236,
+    "lng": 3401,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277096",
+    "name": "North Akkala Foothill",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4205,
+      "y": 100,
+      "z": -2901
+    },
+    "lat": -2901,
+    "lng": 4205,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277097",
+    "name": "Bloodleaf Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4275,
+      "y": 100,
+      "z": -3012
+    },
+    "lat": -3012,
+    "lng": 4275,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277098",
+    "name": "Rok Woods",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3349,
+      "y": 100,
+      "z": -3061
+    },
+    "lat": -3061,
+    "lng": 3349,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277099",
+    "name": "Skull Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3307,
+      "y": 100,
+      "z": -3477
+    },
+    "lat": -3477,
+    "lng": 3307,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277100",
+    "name": "Akkala Wilds",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3708,
+      "y": 100,
+      "z": -3365
+    },
+    "lat": -3365,
+    "lng": 3708,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277101",
+    "name": "Tempest Gulch",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3412,
+      "y": 100,
+      "z": -3255
+    },
+    "lat": -3255,
+    "lng": 3412,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277102",
+    "name": "Tumlea Heights",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4132,
+      "y": 100,
+      "z": -3163
+    },
+    "lat": -3163,
+    "lng": 4132,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277104",
+    "name": "North Akkala Beach",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4704,
+      "y": 100,
+      "z": -2903
+    },
+    "lat": -2903,
+    "lng": 4704,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277105",
+    "name": "Eldin's Flank",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2272,
+      "y": 100,
+      "z": -3660
+    },
+    "lat": -3660,
+    "lng": 2272,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277106",
+    "name": "Death Caldera",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2530,
+      "y": 100,
+      "z": -2959
+    },
+    "lat": -2959,
+    "lng": 2530,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277107",
+    "name": "Lake Darman",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1993,
+      "y": 100,
+      "z": -3043
+    },
+    "lat": -3043,
+    "lng": 1993,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277108",
+    "name": "Goro Cove",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1857,
+      "y": 100,
+      "z": -2423
+    },
+    "lat": -2423,
+    "lng": 1857,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277109",
+    "name": "Gorko Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2099,
+      "y": 100,
+      "z": -2130
+    },
+    "lat": -2130,
+    "lng": 2099,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277110",
+    "name": "Darb Pond",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2332,
+      "y": 100,
+      "z": -2059
+    },
+    "lat": -2059,
+    "lng": 2332,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277111",
+    "name": "Gero Pond",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2430,
+      "y": 100,
+      "z": -1731
+    },
+    "lat": -1731,
+    "lng": 2430,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277112",
+    "name": "Broca Island",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2702,
+      "y": 100,
+      "z": -1747
+    },
+    "lat": -1747,
+    "lng": 2702,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277113",
+    "name": "Gortram Cliff",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1790,
+      "y": 100,
+      "z": -1884
+    },
+    "lat": -1884,
+    "lng": 1790,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277114",
+    "name": "Gorko Tunnel",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1987,
+      "y": 100,
+      "z": -2012
+    },
+    "lat": -2012,
+    "lng": 1987,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277115",
+    "name": "Goron Hot Springs",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1752,
+      "y": 100,
+      "z": -2222
+    },
+    "lat": -2222,
+    "lng": 1752,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277116",
+    "name": "Goronbi River",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1568,
+      "y": 100,
+      "z": -1849
+    },
+    "lat": -1849,
+    "lng": 1568,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277117",
+    "name": "Ulri Mountain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3549,
+      "y": 100,
+      "z": -2047
+    },
+    "lat": -2047,
+    "lng": 3549,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277118",
+    "name": "Akkala Citadel Ruins",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3317,
+      "y": 100,
+      "z": -1500
+    },
+    "lat": -1500,
+    "lng": 3317,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277120",
+    "name": "South Akkala Plains",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3252,
+      "y": 100,
+      "z": -1355
+    },
+    "lat": -1355,
+    "lng": 3252,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277121",
+    "name": "Cephla Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2746,
+      "y": 100,
+      "z": -1273
+    },
+    "lat": -1273,
+    "lng": 2746,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277122",
+    "name": "Kanalet Ridge",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3272,
+      "y": 100,
+      "z": -1863
+    },
+    "lat": -1863,
+    "lng": 3272,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277123",
+    "name": "Ternio Trail",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2701,
+      "y": 100,
+      "z": -764
+    },
+    "lat": -764,
+    "lng": 2701,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277124",
+    "name": "Trilby Valley",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2253,
+      "y": 100,
+      "z": -685
+    },
+    "lat": -685,
+    "lng": 2253,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277125",
+    "name": "Lake Ferona",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2135,
+      "y": 100,
+      "z": -1172
+    },
+    "lat": -1172,
+    "lng": 2135,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277126",
+    "name": "Boné Pond",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2069,
+      "y": 100,
+      "z": 28
+    },
+    "lat": 28,
+    "lng": 2069,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277127",
+    "name": "Kincean Island",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2024,
+      "y": 100,
+      "z": 159
+    },
+    "lat": 159,
+    "lng": 2024,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277128",
+    "name": "Molida Island",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1831,
+      "y": 100,
+      "z": 226
+    },
+    "lat": 226,
+    "lng": 1831,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277129",
+    "name": "Linebeck Island",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1735,
+      "y": 100,
+      "z": 102
+    },
+    "lat": 102,
+    "lng": 1735,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277131",
+    "name": "Mercay Island",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1699,
+      "y": 100,
+      "z": -113
+    },
+    "lat": -113,
+    "lng": 1699,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277132",
+    "name": "Zelo Pond",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1643,
+      "y": 100,
+      "z": -508
+    },
+    "lat": -508,
+    "lng": 1643,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277133",
+    "name": "Bannan Island",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1769,
+      "y": 100,
+      "z": 373
+    },
+    "lat": 373,
+    "lng": 1769,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277134",
+    "name": "Shrine Island",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1640,
+      "y": 100,
+      "z": 463
+    },
+    "lat": 463,
+    "lng": 1640,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277135",
+    "name": "Goponga Island",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1562,
+      "y": 100,
+      "z": 324
+    },
+    "lat": 324,
+    "lng": 1562,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277136",
+    "name": "Wes Island",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1400,
+      "y": 100,
+      "z": 309
+    },
+    "lat": 309,
+    "lng": 1400,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277137",
+    "name": "Zauz Island",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1446,
+      "y": 100,
+      "z": 165
+    },
+    "lat": 165,
+    "lng": 1446,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277138",
+    "name": "Millennio Sandbar",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1284,
+      "y": 100,
+      "z": 536
+    },
+    "lat": 536,
+    "lng": 1284,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277139",
+    "name": "Rikoka Hills",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1597,
+      "y": 100,
+      "z": 700
+    },
+    "lat": 700,
+    "lng": 1597,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277140",
+    "name": "Quatta's Shelf",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2191,
+      "y": 100,
+      "z": 486
+    },
+    "lat": 486,
+    "lng": 2191,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277141",
+    "name": "East Hill",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1878,
+      "y": 100,
+      "z": 808
+    },
+    "lat": 808,
+    "lng": 1878,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277142",
+    "name": "Telta Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1719,
+      "y": 100,
+      "z": 783
+    },
+    "lat": 783,
+    "lng": 1719,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277143",
+    "name": "Sahasra Slope",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1392,
+      "y": 100,
+      "z": 1039
+    },
+    "lat": 1039,
+    "lng": 1392,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277144",
+    "name": "Lantern Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1708,
+      "y": 100,
+      "z": 969
+    },
+    "lat": 969,
+    "lng": 1708,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277145",
+    "name": "Ring Ruins",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1774,
+      "y": 100,
+      "z": 901
+    },
+    "lat": 901,
+    "lng": 1774,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277146",
+    "name": "Pierre Plateau",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2195,
+      "y": 100,
+      "z": 943
+    },
+    "lat": 943,
+    "lng": 2195,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277147",
+    "name": "Bonooru's Stand",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2152,
+      "y": 100,
+      "z": 1144
+    },
+    "lat": 1144,
+    "lng": 2152,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277148",
+    "name": "Rabia Plain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2613,
+      "y": 100,
+      "z": 600
+    },
+    "lat": 600,
+    "lng": 2613,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277149",
+    "name": "Lanayru Heights",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2742,
+      "y": 100,
+      "z": 930
+    },
+    "lat": 930,
+    "lng": 2742,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277150",
+    "name": "Lanayru Bluff",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2883,
+      "y": 100,
+      "z": 1276
+    },
+    "lat": 1276,
+    "lng": 2883,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277151",
+    "name": "Phalian Highlands",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2512,
+      "y": 100,
+      "z": 1215
+    },
+    "lat": 1215,
+    "lng": 2512,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277152",
+    "name": "Samasa Plain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3193,
+      "y": 100,
+      "z": 589
+    },
+    "lat": 589,
+    "lng": 3193,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277153",
+    "name": "Trotter's Downfall",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3055,
+      "y": 100,
+      "z": 841
+    },
+    "lat": 841,
+    "lng": 3055,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277154",
+    "name": "Lanayru Bay",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3877,
+      "y": 100,
+      "z": 607
+    },
+    "lat": 607,
+    "lng": 3877,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277155",
+    "name": "Brynna Plain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3907,
+      "y": 100,
+      "z": 411
+    },
+    "lat": 411,
+    "lng": 3907,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277156",
+    "name": "Horon Lagoon",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4231,
+      "y": 100,
+      "z": 308
+    },
+    "lat": 308,
+    "lng": 4231,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277157",
+    "name": "Talus Plateau",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4430,
+      "y": 100,
+      "z": 364
+    },
+    "lat": 364,
+    "lng": 4430,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277158",
+    "name": "Lodrum Headland",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4434,
+      "y": 100,
+      "z": 647
+    },
+    "lat": 647,
+    "lng": 4434,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277159",
+    "name": "Tarm Point",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4479,
+      "y": 100,
+      "z": 887
+    },
+    "lat": 887,
+    "lng": 4479,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277160",
+    "name": "Wintre Island",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4516,
+      "y": 100,
+      "z": 1016
+    },
+    "lat": 1016,
+    "lng": 4516,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277161",
+    "name": "Ja'Abu Ridge",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3861,
+      "y": 100,
+      "z": 59
+    },
+    "lat": 59,
+    "lng": 3861,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277162",
+    "name": "Spool Bight",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4401,
+      "y": 100,
+      "z": -214
+    },
+    "lat": -214,
+    "lng": 4401,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277163",
+    "name": "Tal Tal Peak",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4144,
+      "y": 100,
+      "z": -349
+    },
+    "lat": -349,
+    "lng": 4144,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277164",
+    "name": "Davdi Island",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4644,
+      "y": 100,
+      "z": -605
+    },
+    "lat": -605,
+    "lng": 4644,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277165",
+    "name": "Ploymus Mountain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3845,
+      "y": 100,
+      "z": -662
+    },
+    "lat": -662,
+    "lng": 3845,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277166",
+    "name": "Ulria Grotto",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4209,
+      "y": 100,
+      "z": -782
+    },
+    "lat": -782,
+    "lng": 4209,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277167",
+    "name": "Ukuku Plains",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3909,
+      "y": 100,
+      "z": -971
+    },
+    "lat": -971,
+    "lng": 3909,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277168",
+    "name": "Knuckel Island",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4651,
+      "y": 100,
+      "z": -783
+    },
+    "lat": -783,
+    "lng": 4651,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277169",
+    "name": "Ankel Island",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4652,
+      "y": 100,
+      "z": -1031
+    },
+    "lat": -1031,
+    "lng": 4652,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277170",
+    "name": "Kaepora Pass",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4124,
+      "y": 100,
+      "z": -1197
+    },
+    "lat": -1197,
+    "lng": 4124,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277171",
+    "name": "Tingel Island",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4698,
+      "y": 100,
+      "z": -1340
+    },
+    "lat": -1340,
+    "lng": 4698,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277172",
+    "name": "Spring of Wisdom",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3925,
+      "y": 100,
+      "z": 1363
+    },
+    "lat": 1363,
+    "lng": 3925,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277173",
+    "name": "Loshlo Harbor",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3455,
+      "y": 100,
+      "z": 2923
+    },
+    "lat": 2923,
+    "lng": 3455,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277174",
+    "name": "Hateno Bay",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4032,
+      "y": 100,
+      "z": 2448
+    },
+    "lat": 2448,
+    "lng": 4032,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277175",
+    "name": "Kitano Bay",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3698,
+      "y": 100,
+      "z": 2522
+    },
+    "lat": 2522,
+    "lng": 3698,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277176",
+    "name": "Hateno Beach",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4017,
+      "y": 100,
+      "z": 2319
+    },
+    "lat": 2319,
+    "lng": 4017,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277177",
+    "name": "Deepback Bay",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4294,
+      "y": 100,
+      "z": 2387
+    },
+    "lat": 2387,
+    "lng": 4294,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277178",
+    "name": "Solewood Range",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4423,
+      "y": 100,
+      "z": 2210
+    },
+    "lat": 2210,
+    "lng": 4423,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277179",
+    "name": "Mapla Point",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4674,
+      "y": 100,
+      "z": 2384
+    },
+    "lat": 2384,
+    "lng": 4674,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277180",
+    "name": "Koholit Rock",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4664,
+      "y": 100,
+      "z": 3744
+    },
+    "lat": 3744,
+    "lng": 4664,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277181",
+    "name": "Eventide Island",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4587,
+      "y": 100,
+      "z": 3648
+    },
+    "lat": 3648,
+    "lng": 4587,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277182",
+    "name": "Toronbo Beach",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4489,
+      "y": 100,
+      "z": 3527
+    },
+    "lat": 3527,
+    "lng": 4489,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277183",
+    "name": "Soka Point",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3800,
+      "y": 100,
+      "z": 3640
+    },
+    "lat": 3640,
+    "lng": 3800,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277184",
+    "name": "Cape Cresia",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3456,
+      "y": 100,
+      "z": 3820
+    },
+    "lat": 3820,
+    "lng": 3456,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277185",
+    "name": "Rimba Beach",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3167,
+      "y": 100,
+      "z": 3745
+    },
+    "lat": 3745,
+    "lng": 3167,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277186",
+    "name": "Gogobi Shores",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3172,
+      "y": 100,
+      "z": 3543
+    },
+    "lat": 3543,
+    "lng": 3172,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277187",
+    "name": "Palmorae Beach",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3507,
+      "y": 100,
+      "z": 3470
+    },
+    "lat": 3470,
+    "lng": 3507,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277188",
+    "name": "Cape Cales",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3568,
+      "y": 100,
+      "z": 3286
+    },
+    "lat": 3286,
+    "lng": 3568,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277189",
+    "name": "Korne Beach",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2920,
+      "y": 100,
+      "z": 3664
+    },
+    "lat": 3664,
+    "lng": 2920,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277190",
+    "name": "Clarnet Coast",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2545,
+      "y": 100,
+      "z": 3900
+    },
+    "lat": 3900,
+    "lng": 2545,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277191",
+    "name": "Yambi Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2472,
+      "y": 100,
+      "z": 3601
+    },
+    "lat": 3601,
+    "lng": 2472,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277192",
+    "name": "Tuft Mountain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2567,
+      "y": 100,
+      "z": 3502
+    },
+    "lat": 3502,
+    "lng": 2567,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277193",
+    "name": "Temto Hill",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2368,
+      "y": 100,
+      "z": 3430
+    },
+    "lat": 3430,
+    "lng": 2368,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277194",
+    "name": "Atun Valley",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2465,
+      "y": 100,
+      "z": 3237
+    },
+    "lat": 3237,
+    "lng": 2465,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277195",
+    "name": "Mount Dunsel",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3170,
+      "y": 100,
+      "z": 3198
+    },
+    "lat": 3198,
+    "lng": 3170,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277196",
+    "name": "Dunsel Plateau",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3020,
+      "y": 100,
+      "z": 3116
+    },
+    "lat": 3116,
+    "lng": 3020,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277197",
+    "name": "Keya Pond",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2975,
+      "y": 100,
+      "z": 2970
+    },
+    "lat": 2970,
+    "lng": 2975,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277198",
+    "name": "Uten Marsh",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2687,
+      "y": 100,
+      "z": 2958
+    },
+    "lat": 2958,
+    "lng": 2687,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277199",
+    "name": "Taran Pass",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2716,
+      "y": 100,
+      "z": 2847
+    },
+    "lat": 2847,
+    "lng": 2716,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277200",
+    "name": "Ebon Mountain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3347,
+      "y": 100,
+      "z": 2540
+    },
+    "lat": 2540,
+    "lng": 3347,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277201",
+    "name": "Hanu Pond",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2782,
+      "y": 100,
+      "z": 2738
+    },
+    "lat": 2738,
+    "lng": 2782,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277202",
+    "name": "Stinger Cliffs",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2849,
+      "y": 100,
+      "z": 2622
+    },
+    "lat": 2622,
+    "lng": 2849,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277203",
+    "name": "Firly Plateau",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2941,
+      "y": 100,
+      "z": 2390
+    },
+    "lat": 2390,
+    "lng": 2941,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277204",
+    "name": "Lake Jarrah",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2951,
+      "y": 100,
+      "z": 2223
+    },
+    "lat": 2223,
+    "lng": 2951,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277205",
+    "name": "Firly Pond",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3271,
+      "y": 100,
+      "z": 2240
+    },
+    "lat": 2240,
+    "lng": 3271,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277206",
+    "name": "Marblod Plain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2735,
+      "y": 100,
+      "z": 2287
+    },
+    "lat": 2287,
+    "lng": 2735,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277208",
+    "name": "Koto Pond",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2381,
+      "y": 100,
+      "z": 2545
+    },
+    "lat": 2545,
+    "lng": 2381,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277209",
+    "name": "Camphor Pond",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3067,
+      "y": 100,
+      "z": 2048
+    },
+    "lat": 2048,
+    "lng": 3067,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277210",
+    "name": "Midla Woods",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3106,
+      "y": 100,
+      "z": 2194
+    },
+    "lat": 2194,
+    "lng": 3106,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277211",
+    "name": "Ginner Woods",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3193,
+      "y": 100,
+      "z": 2097
+    },
+    "lat": 2097,
+    "lng": 3193,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277212",
+    "name": "Ovli Plain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3026,
+      "y": 100,
+      "z": 1884
+    },
+    "lat": 1884,
+    "lng": 3026,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277213",
+    "name": "Zelkoa Pond",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3495,
+      "y": 100,
+      "z": 1977
+    },
+    "lat": 1977,
+    "lng": 3495,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277214",
+    "name": "Lake Sumac",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3736,
+      "y": 100,
+      "z": 1914
+    },
+    "lat": 1914,
+    "lng": 3736,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277215",
+    "name": "Walnot Mountain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4126,
+      "y": 100,
+      "z": 1958
+    },
+    "lat": 1958,
+    "lng": 4126,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277216",
+    "name": "Afromsia Coast",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 4598,
+      "y": 100,
+      "z": 1822
+    },
+    "lat": 1822,
+    "lng": 4598,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277217",
+    "name": "Lanayru Range",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3996,
+      "y": 100,
+      "z": 1567
+    },
+    "lat": 1567,
+    "lng": 3996,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277218",
+    "name": "Madorna Mountain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3905,
+      "y": 100,
+      "z": 1676
+    },
+    "lat": 1676,
+    "lng": 3905,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277219",
+    "name": "Naydra Snowfield",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3513,
+      "y": 100,
+      "z": 1418
+    },
+    "lat": 1418,
+    "lng": 3513,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277220",
+    "name": "Nirvata Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3207,
+      "y": 100,
+      "z": 1696
+    },
+    "lat": 1696,
+    "lng": 3207,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277221",
+    "name": "Nirvata Plateau",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3196,
+      "y": 100,
+      "z": 1398
+    },
+    "lat": 1398,
+    "lng": 3196,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277222",
+    "name": "Purifier Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3241,
+      "y": 100,
+      "z": 1311
+    },
+    "lat": 1311,
+    "lng": 3241,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277223",
+    "name": "Peak of Awakening",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2923,
+      "y": 100,
+      "z": 1449
+    },
+    "lat": 1449,
+    "lng": 2923,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277224",
+    "name": "Robred Dropoff",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2706,
+      "y": 100,
+      "z": 1603
+    },
+    "lat": 1603,
+    "lng": 2706,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277225",
+    "name": "Fir River",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2804,
+      "y": 100,
+      "z": 1994
+    },
+    "lat": 1994,
+    "lng": 2804,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277226",
+    "name": "Oakle's Navel",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2468,
+      "y": 100,
+      "z": 2105
+    },
+    "lat": 2105,
+    "lng": 2468,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277228",
+    "name": "Cliffs of Quince",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2581,
+      "y": 100,
+      "z": 1789
+    },
+    "lat": 1789,
+    "lng": 2581,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277229",
+    "name": "Meda Mountain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2542,
+      "y": 100,
+      "z": 2494
+    },
+    "lat": 2494,
+    "lng": 2542,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277230",
+    "name": "Bubinga Forest",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2062,
+      "y": 100,
+      "z": 2121
+    },
+    "lat": 2121,
+    "lng": 2062,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277231",
+    "name": "Ash Swamp",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1985,
+      "y": 100,
+      "z": 1858
+    },
+    "lat": 1858,
+    "lng": 1985,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277232",
+    "name": "Blatchery Plain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2125,
+      "y": 100,
+      "z": 1937
+    },
+    "lat": 1937,
+    "lng": 2125,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277233",
+    "name": "Hickaly Woods",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1939,
+      "y": 100,
+      "z": 2431
+    },
+    "lat": 2431,
+    "lng": 1939,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277234",
+    "name": "Breman Peak",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2121,
+      "y": 100,
+      "z": 2569
+    },
+    "lat": 2569,
+    "lng": 2121,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277235",
+    "name": "Mount Taran",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2477,
+      "y": 100,
+      "z": 2690
+    },
+    "lat": 2690,
+    "lng": 2477,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277236",
+    "name": "Rabella Wetlands",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2415,
+      "y": 100,
+      "z": 2804
+    },
+    "lat": 2804,
+    "lng": 2415,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277237",
+    "name": "Courage Steppe",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2235,
+      "y": 100,
+      "z": 2956
+    },
+    "lat": 2956,
+    "lng": 2235,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277240",
+    "name": "Aris Beach",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1912,
+      "y": 100,
+      "z": 3881
+    },
+    "lat": 3881,
+    "lng": 1912,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277241",
+    "name": "Rassla Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1860,
+      "y": 100,
+      "z": 3683
+    },
+    "lat": 3683,
+    "lng": 1860,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277242",
+    "name": "Lake Floria",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1737,
+      "y": 100,
+      "z": 3537
+    },
+    "lat": 3537,
+    "lng": 1737,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277243",
+    "name": "Ubota Point",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1598,
+      "y": 100,
+      "z": 3641
+    },
+    "lat": 3641,
+    "lng": 1598,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277244",
+    "name": "Ebara Forest",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1867,
+      "y": 100,
+      "z": 3327
+    },
+    "lat": 3327,
+    "lng": 1867,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277245",
+    "name": "Calora Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2018,
+      "y": 100,
+      "z": 3221
+    },
+    "lat": 3221,
+    "lng": 2018,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277246",
+    "name": "Rodai Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1856,
+      "y": 100,
+      "z": 3136
+    },
+    "lat": 3136,
+    "lng": 1856,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277247",
+    "name": "Floria Falls",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1770,
+      "y": 100,
+      "z": 3270
+    },
+    "lat": 3270,
+    "lng": 1770,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277248",
+    "name": "Corta Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1681,
+      "y": 100,
+      "z": 3101
+    },
+    "lat": 3101,
+    "lng": 1681,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277249",
+    "name": "Bronas Forest",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1475,
+      "y": 100,
+      "z": 3279
+    },
+    "lat": 3279,
+    "lng": 1475,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277250",
+    "name": "Martha's Landing",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1206,
+      "y": 100,
+      "z": 3762
+    },
+    "lat": 3762,
+    "lng": 1206,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277251",
+    "name": "Floria River",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1254,
+      "y": 100,
+      "z": 3304
+    },
+    "lat": 3304,
+    "lng": 1254,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277252",
+    "name": "Sarjon Woods",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1112,
+      "y": 100,
+      "z": 3255
+    },
+    "lat": 3255,
+    "lng": 1112,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277253",
+    "name": "Kamah Plateau",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1420,
+      "y": 100,
+      "z": 2998
+    },
+    "lat": 2998,
+    "lng": 1420,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277254",
+    "name": "Keelay Plain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1492,
+      "y": 100,
+      "z": 2870
+    },
+    "lat": 2870,
+    "lng": 1492,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277255",
+    "name": "Riola Spring",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1786,
+      "y": 100,
+      "z": 2941
+    },
+    "lat": 2941,
+    "lng": 1786,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277256",
+    "name": "Mount Floria",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1937,
+      "y": 100,
+      "z": 2785
+    },
+    "lat": 2785,
+    "lng": 1937,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277257",
+    "name": "Angel Peak",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1699,
+      "y": 100,
+      "z": 2610
+    },
+    "lat": 2610,
+    "lng": 1699,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277258",
+    "name": "Jia Highlands",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1499,
+      "y": 100,
+      "z": 2467
+    },
+    "lat": 2467,
+    "lng": 1499,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277259",
+    "name": "Tobio's Hollow",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1330,
+      "y": 100,
+      "z": 2587
+    },
+    "lat": 2587,
+    "lng": 1330,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277260",
+    "name": "Dracozu Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 925,
+      "y": 100,
+      "z": 2572
+    },
+    "lat": 2572,
+    "lng": 925,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277261",
+    "name": "Damel Forest",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 828,
+      "y": 100,
+      "z": 2718
+    },
+    "lat": 2718,
+    "lng": 828,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277262",
+    "name": "Dracozu River",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 992,
+      "y": 100,
+      "z": 2784
+    },
+    "lat": 2784,
+    "lng": 992,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277263",
+    "name": "Harker Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 909,
+      "y": 100,
+      "z": 2877
+    },
+    "lat": 2877,
+    "lng": 909,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277264",
+    "name": "Guchini Plain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 879,
+      "y": 100,
+      "z": 3357
+    },
+    "lat": 3357,
+    "lng": 879,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277265",
+    "name": "Herin Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1008,
+      "y": 100,
+      "z": 3520
+    },
+    "lat": 3520,
+    "lng": 1008,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277266",
+    "name": "Ibara Butte",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 809,
+      "y": 100,
+      "z": 3780
+    },
+    "lat": 3780,
+    "lng": 809,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277267",
+    "name": "Komo Shoreline",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 708,
+      "y": 100,
+      "z": 3927
+    },
+    "lat": 3927,
+    "lng": 708,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277268",
+    "name": "Lake of the Horse God",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 635,
+      "y": 100,
+      "z": 3639
+    },
+    "lat": 3639,
+    "lng": 635,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277269",
+    "name": "Pagos Woods",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 627,
+      "y": 100,
+      "z": 3069
+    },
+    "lat": 3069,
+    "lng": 627,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277270",
+    "name": "Finra Woods",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 425,
+      "y": 100,
+      "z": 2961
+    },
+    "lat": 2961,
+    "lng": 425,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277271",
+    "name": "Farosh Hills",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 551,
+      "y": 100,
+      "z": 2485
+    },
+    "lat": 2485,
+    "lng": 551,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277272",
+    "name": "Lake Hylia",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 109,
+      "y": 100,
+      "z": 2468
+    },
+    "lat": 2468,
+    "lng": 109,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277273",
+    "name": "Nette Plateau",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 207,
+      "y": 100,
+      "z": 3634
+    },
+    "lat": 3634,
+    "lng": 207,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277274",
+    "name": "Puffer Beach",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 218,
+      "y": 100,
+      "z": 3904
+    },
+    "lat": 3904,
+    "lng": 218,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277275",
+    "name": "Laverra Beach",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -181,
+      "y": 100,
+      "z": 3842
+    },
+    "lat": 3842,
+    "lng": -181,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277276",
+    "name": "Nautelle Wetlands",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -631,
+      "y": 100,
+      "z": 3842
+    },
+    "lat": 3842,
+    "lng": -631,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277277",
+    "name": "Darybon Plains",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -348,
+      "y": 100,
+      "z": 3695
+    },
+    "lat": 3695,
+    "lng": -348,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277278",
+    "name": "Papetto Grove",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -331,
+      "y": 100,
+      "z": 3547
+    },
+    "lat": 3547,
+    "lng": -331,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277279",
+    "name": "Oseira Plains",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -789,
+      "y": 100,
+      "z": 3589
+    },
+    "lat": 3589,
+    "lng": -789,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277285",
+    "name": "Hylia Island",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -319,
+      "y": 100,
+      "z": 2637
+    },
+    "lat": 2637,
+    "lng": -319,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277286",
+    "name": "Cora Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -44,
+      "y": 100,
+      "z": 3058
+    },
+    "lat": 3058,
+    "lng": -44,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277287",
+    "name": "Menoat River",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 8,
+      "y": 100,
+      "z": 3235
+    },
+    "lat": 3235,
+    "lng": 8,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277288",
+    "name": "Haran Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 378,
+      "y": 100,
+      "z": 3479
+    },
+    "lat": 3479,
+    "lng": 378,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277289",
+    "name": "Harfin Valley",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 93,
+      "y": 100,
+      "z": 3378
+    },
+    "lat": 3378,
+    "lng": 93,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277290",
+    "name": "Barula Plain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 160,
+      "y": 100,
+      "z": 3135
+    },
+    "lat": 3135,
+    "lng": 160,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277291",
+    "name": "Fural Plain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 409,
+      "y": 100,
+      "z": 3350
+    },
+    "lat": 3350,
+    "lng": 409,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277292",
+    "name": "Parache Plains",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -370,
+      "y": 100,
+      "z": 3304
+    },
+    "lat": 3304,
+    "lng": -370,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277293",
+    "name": "Zokassa Ridge",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -612,
+      "y": 100,
+      "z": 3189
+    },
+    "lat": 3189,
+    "lng": -612,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277294",
+    "name": "Grinnden Plains",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -755,
+      "y": 100,
+      "z": 2920
+    },
+    "lat": 2920,
+    "lng": -755,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277295",
+    "name": "East Gerudo Mesa",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1658,
+      "y": 100,
+      "z": 2989
+    },
+    "lat": 2989,
+    "lng": -1658,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277296",
+    "name": "Champion's Gate",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1990,
+      "y": 100,
+      "z": 3196
+    },
+    "lat": 3196,
+    "lng": -1990,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277297",
+    "name": "Mount Granajh",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1376,
+      "y": 100,
+      "z": 3342
+    },
+    "lat": 3342,
+    "lng": -1376,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277298",
+    "name": "Daval Peak",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1395,
+      "y": 100,
+      "z": 3612
+    },
+    "lat": 3612,
+    "lng": -1395,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277299",
+    "name": "East Barrens",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2592,
+      "y": 100,
+      "z": 3644
+    },
+    "lat": 3644,
+    "lng": -2592,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277300",
+    "name": "Palu Wasteland",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3192,
+      "y": 100,
+      "z": 3071
+    },
+    "lat": 3071,
+    "lng": -3192,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277301",
+    "name": "Southern Oasis",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3741,
+      "y": 100,
+      "z": 3597
+    },
+    "lat": 3597,
+    "lng": -3741,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277302",
+    "name": "Dragon's Exile",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -4733,
+      "y": 100,
+      "z": 3512
+    },
+    "lat": 3512,
+    "lng": -4733,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277303",
+    "name": "Toruma Dunes",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -4838,
+      "y": 100,
+      "z": 2745
+    },
+    "lat": 2745,
+    "lng": -4838,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277304",
+    "name": "West Barrens",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -4598,
+      "y": 100,
+      "z": 2491
+    },
+    "lat": 2491,
+    "lng": -4598,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277305",
+    "name": "West Gerudo Ruins",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -4438,
+      "y": 100,
+      "z": 2303
+    },
+    "lat": 2303,
+    "lng": -4438,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277306",
+    "name": "Great Cliffs",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3325,
+      "y": 100,
+      "z": 2208
+    },
+    "lat": 2208,
+    "lng": -3325,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277308",
+    "name": "Birida Lookout",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3486,
+      "y": 100,
+      "z": 1865
+    },
+    "lat": 1865,
+    "lng": -3486,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277309",
+    "name": "Karusa Valley",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -4319,
+      "y": 100,
+      "z": 1871
+    },
+    "lat": 1871,
+    "lng": -4319,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277311",
+    "name": "Gerudo Canyon",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2314,
+      "y": 100,
+      "z": 2222
+    },
+    "lat": 2222,
+    "lng": -2314,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277312",
+    "name": "Spectacle Rock",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2221,
+      "y": 100,
+      "z": 2533
+    },
+    "lat": 2533,
+    "lng": -2221,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277313",
+    "name": "Yarna Valley",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1894,
+      "y": 100,
+      "z": 2818
+    },
+    "lat": 2818,
+    "lng": -1894,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277314",
+    "name": "Stalry Plateau",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1552,
+      "y": 100,
+      "z": 2716
+    },
+    "lat": 2716,
+    "lng": -1552,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277315",
+    "name": "Taobab Grassland",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1211,
+      "y": 100,
+      "z": 2764
+    },
+    "lat": 2764,
+    "lng": -1211,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277316",
+    "name": "Mount Faloraa",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -956,
+      "y": 100,
+      "z": 2629
+    },
+    "lat": 2629,
+    "lng": -956,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277317",
+    "name": "River of the Dead",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1202,
+      "y": 100,
+      "z": 2019
+    },
+    "lat": 2019,
+    "lng": -1202,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277318",
+    "name": "Mount Hylia",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1287,
+      "y": 100,
+      "z": 2231
+    },
+    "lat": 2231,
+    "lng": -1287,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277319",
+    "name": "Gerudo Canyon Pass",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1653,
+      "y": 100,
+      "z": 2076
+    },
+    "lat": 2076,
+    "lng": -1653,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277320",
+    "name": "Mount Nabooru",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1899,
+      "y": 100,
+      "z": 1860
+    },
+    "lat": 1860,
+    "lng": -1899,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277322",
+    "name": "Hopper Pond",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1182,
+      "y": 100,
+      "z": 1670
+    },
+    "lat": 1670,
+    "lng": -1182,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277323",
+    "name": "Forest of Spirits",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -960,
+      "y": 100,
+      "z": 1647
+    },
+    "lat": 1647,
+    "lng": -960,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277326",
+    "name": "Koukot Plateau",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2189,
+      "y": 100,
+      "z": 1831
+    },
+    "lat": 1831,
+    "lng": -2189,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277327",
+    "name": "Nephra Hill",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2223,
+      "y": 100,
+      "z": 1500
+    },
+    "lat": 1500,
+    "lng": -2223,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277328",
+    "name": "Taafei Hill",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2808,
+      "y": 100,
+      "z": 1805
+    },
+    "lat": 1805,
+    "lng": -2808,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277329",
+    "name": "Zirco Mesa",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2632,
+      "y": 100,
+      "z": 1545
+    },
+    "lat": 1545,
+    "lng": -2632,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277330",
+    "name": "Sapphia's Table",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3193,
+      "y": 100,
+      "z": 1578
+    },
+    "lat": 1578,
+    "lng": -3193,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277331",
+    "name": "Laparoh Mesa",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2960,
+      "y": 100,
+      "z": 1181
+    },
+    "lat": 1181,
+    "lng": -2960,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277334",
+    "name": "Vatorsa Snowfield",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3503,
+      "y": 100,
+      "z": 1138
+    },
+    "lat": 1138,
+    "lng": -3503,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277335",
+    "name": "Risoka Snowfield",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -4539,
+      "y": 100,
+      "z": 1100
+    },
+    "lat": 1100,
+    "lng": -4539,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277336",
+    "name": "Rutimala Hill",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -4496,
+      "y": 100,
+      "z": 1404
+    },
+    "lat": 1404,
+    "lng": -4496,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277337",
+    "name": "Gerudo Summit",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -4129,
+      "y": 100,
+      "z": 726
+    },
+    "lat": 726,
+    "lng": -4129,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277338",
+    "name": "Cliffs of Ruvara",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3403,
+      "y": 100,
+      "z": 618
+    },
+    "lat": 618,
+    "lng": -3403,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277339",
+    "name": "Meadela's Mantle",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -4152,
+      "y": 100,
+      "z": 1292
+    },
+    "lat": 1292,
+    "lng": -4152,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277340",
+    "name": "Hemaar's Descent",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -4291,
+      "y": 100,
+      "z": 173
+    },
+    "lat": 173,
+    "lng": -4291,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277341",
+    "name": "Mystathi's Shelf",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -4061,
+      "y": 100,
+      "z": 405
+    },
+    "lat": 405,
+    "lng": -4061,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277342",
+    "name": "Lake Illumeni",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3540,
+      "y": 100,
+      "z": 151
+    },
+    "lat": 151,
+    "lng": -3540,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277343",
+    "name": "Illumeni Plateau",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3111,
+      "y": 100,
+      "z": 18
+    },
+    "lat": 18,
+    "lng": -3111,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277344",
+    "name": "Washa's Bluff",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2725,
+      "y": 100,
+      "z": 91
+    },
+    "lat": 91,
+    "lng": -2725,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277345",
+    "name": "Tamio River",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2346,
+      "y": 100,
+      "z": 80
+    },
+    "lat": 80,
+    "lng": -2346,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277346",
+    "name": "Satori Mountain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2272,
+      "y": 100,
+      "z": 297
+    },
+    "lat": 297,
+    "lng": -2272,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277347",
+    "name": "Rutile Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2540,
+      "y": 100,
+      "z": 653
+    },
+    "lat": 653,
+    "lng": -2540,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277348",
+    "name": "Dalite Forest",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2080,
+      "y": 100,
+      "z": 1135
+    },
+    "lat": 1135,
+    "lng": -2080,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277349",
+    "name": "Safula Hill",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1774,
+      "y": 100,
+      "z": 891
+    },
+    "lat": 891,
+    "lng": -1774,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277350",
+    "name": "Nima Plain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1700,
+      "y": 100,
+      "z": 468
+    },
+    "lat": 468,
+    "lng": -1700,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277351",
+    "name": "Regencia River",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1246,
+      "y": 100,
+      "z": -131
+    },
+    "lat": -131,
+    "lng": -1246,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277352",
+    "name": "Aquame Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1011,
+      "y": 100,
+      "z": 1060
+    },
+    "lat": 1060,
+    "lng": -1011,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277353",
+    "name": "Lake Kolomo",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -503,
+      "y": 100,
+      "z": 1193
+    },
+    "lat": 1193,
+    "lng": -503,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277354",
+    "name": "Exchange Ruins",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -764,
+      "y": 100,
+      "z": 885
+    },
+    "lat": 885,
+    "lng": -764,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277355",
+    "name": "Windvane Meadow",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -682,
+      "y": 100,
+      "z": 755
+    },
+    "lat": 755,
+    "lng": -682,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277357",
+    "name": "Mount Daphnes",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1070,
+      "y": 100,
+      "z": 581
+    },
+    "lat": 581,
+    "lng": -1070,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277359",
+    "name": "Passeri Greenbelt",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -597,
+      "y": 100,
+      "z": 209
+    },
+    "lat": 209,
+    "lng": -597,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277360",
+    "name": "Ranch Ruins",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 102,
+      "y": 100,
+      "z": 270
+    },
+    "lat": 270,
+    "lng": 102,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277361",
+    "name": "Whistling Hill",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 194,
+      "y": 100,
+      "z": 890
+    },
+    "lat": 890,
+    "lng": 194,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277362",
+    "name": "Bottomless Pond",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 517,
+      "y": 100,
+      "z": 615
+    },
+    "lat": 615,
+    "lng": 517,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277363",
+    "name": "Hylia River",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 806,
+      "y": 100,
+      "z": 400
+    },
+    "lat": 400,
+    "lng": 806,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277364",
+    "name": "Nabi Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1080,
+      "y": 100,
+      "z": 1250
+    },
+    "lat": 1250,
+    "lng": 1080,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277365",
+    "name": "Batrea Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 567,
+      "y": 100,
+      "z": 1231
+    },
+    "lat": 1231,
+    "lng": 567,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277366",
+    "name": "Forest of Time",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -373,
+      "y": 100,
+      "z": 1493
+    },
+    "lat": 1493,
+    "lng": -373,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277368",
+    "name": "Scout's Hill",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -22,
+      "y": 100,
+      "z": 1923
+    },
+    "lat": 1923,
+    "lng": -22,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277369",
+    "name": "Hills of Baumer",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 422,
+      "y": 100,
+      "z": 1782
+    },
+    "lat": 1782,
+    "lng": 422,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277370",
+    "name": "Deya Village Ruins",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 350,
+      "y": 100,
+      "z": 1920
+    },
+    "lat": 1920,
+    "lng": 350,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277371",
+    "name": "Deya Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 436,
+      "y": 100,
+      "z": 2011
+    },
+    "lat": 2011,
+    "lng": 436,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277372",
+    "name": "Eastern Abbey",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -483,
+      "y": 100,
+      "z": 2011
+    },
+    "lat": 2011,
+    "lng": -483,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277373",
+    "name": "Popla Foothills",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 795,
+      "y": 100,
+      "z": 2179
+    },
+    "lat": 2179,
+    "lng": 795,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277374",
+    "name": "Dueling Peaks",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1329,
+      "y": 100,
+      "z": 1835
+    },
+    "lat": 1835,
+    "lng": 1329,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277375",
+    "name": "Squabble River",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 925,
+      "y": 100,
+      "z": 1781
+    },
+    "lat": 1781,
+    "lng": 925,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277376",
+    "name": "South Nabi Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 855,
+      "y": 100,
+      "z": 1615
+    },
+    "lat": 1615,
+    "lng": 855,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277377",
+    "name": "Mable Ridge",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1305,
+      "y": 100,
+      "z": 1410
+    },
+    "lat": 1410,
+    "lng": 1305,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277378",
+    "name": "Lake Siela",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1651,
+      "y": 100,
+      "z": 1418
+    },
+    "lat": 1418,
+    "lng": 1651,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277379",
+    "name": "Pillars of Levia",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1865,
+      "y": 100,
+      "z": 1247
+    },
+    "lat": 1247,
+    "lng": 1865,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277380",
+    "name": "Mabe Prairie",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 215,
+      "y": 100,
+      "z": -205
+    },
+    "lat": -205,
+    "lng": 215,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277381",
+    "name": "Applean Forest",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 539,
+      "y": 100,
+      "z": -253
+    },
+    "lat": -253,
+    "lng": 539,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277382",
+    "name": "Romani Plains",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 314,
+      "y": 100,
+      "z": -335
+    },
+    "lat": -335,
+    "lng": 314,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277384",
+    "name": "Mount Gustaf",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -970,
+      "y": 100,
+      "z": -204
+    },
+    "lat": -204,
+    "lng": -970,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277385",
+    "name": "Moat Bridge",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -611,
+      "y": 100,
+      "z": -666
+    },
+    "lat": -666,
+    "lng": -611,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277386",
+    "name": "West Castle Town",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -505,
+      "y": 100,
+      "z": -402
+    },
+    "lat": -402,
+    "lng": -505,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277387",
+    "name": "Quarry Ruins",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -725,
+      "y": 100,
+      "z": -446
+    },
+    "lat": -446,
+    "lng": -725,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277389",
+    "name": "Central Square",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -251,
+      "y": 100,
+      "z": -438
+    },
+    "lat": -438,
+    "lng": -251,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277390",
+    "name": "Hyrule Castle Town Ruins",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -255,
+      "y": 100,
+      "z": -351
+    },
+    "lat": -351,
+    "lng": -255,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277391",
+    "name": "East Castle Town",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 12,
+      "y": 100,
+      "z": -443
+    },
+    "lat": -443,
+    "lng": 12,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277393",
+    "name": "Hyrule Castle Moat",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 49,
+      "y": 100,
+      "z": -1201
+    },
+    "lat": -1201,
+    "lng": 49,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277394",
+    "name": "Crenel Hills",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 712,
+      "y": 100,
+      "z": -852
+    },
+    "lat": -852,
+    "lng": 712,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277395",
+    "name": "Crenel Peak",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1184,
+      "y": 100,
+      "z": -379
+    },
+    "lat": -379,
+    "lng": 1184,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277397",
+    "name": "Trilby Plain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1404,
+      "y": 100,
+      "z": -920
+    },
+    "lat": -920,
+    "lng": 1404,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277398",
+    "name": "Pico Pond",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1205,
+      "y": 100,
+      "z": -1144
+    },
+    "lat": -1144,
+    "lng": 1205,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277399",
+    "name": "Minshi Woods",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1048,
+      "y": 100,
+      "z": -1538
+    },
+    "lat": -1538,
+    "lng": 1048,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277400",
+    "name": "Goronbi Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1809,
+      "y": 100,
+      "z": -1487
+    },
+    "lat": -1487,
+    "lng": 1809,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277401",
+    "name": "Lake Saria",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 54,
+      "y": 100,
+      "z": -1888
+    },
+    "lat": -1888,
+    "lng": 54,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277402",
+    "name": "Mido Swamp",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 806,
+      "y": 100,
+      "z": -2373
+    },
+    "lat": -2373,
+    "lng": 806,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277403",
+    "name": "Lake Mekar",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 267,
+      "y": 100,
+      "z": -2744
+    },
+    "lat": -2744,
+    "lng": 267,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277404",
+    "name": "Mekar Island",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -258,
+      "y": 100,
+      "z": -2175
+    },
+    "lat": -2175,
+    "lng": -258,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277405",
+    "name": "Mount Drena",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -596,
+      "y": 100,
+      "z": -2629
+    },
+    "lat": -2629,
+    "lng": -596,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277406",
+    "name": "Thyphlo Ruins",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 311,
+      "y": 100,
+      "z": -3058
+    },
+    "lat": -3058,
+    "lng": 311,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277407",
+    "name": "Drenan Highlands",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -181,
+      "y": 100,
+      "z": -3144
+    },
+    "lat": -3144,
+    "lng": -181,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277408",
+    "name": "Deplian Badlands",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 346,
+      "y": 100,
+      "z": -3722
+    },
+    "lat": -3722,
+    "lng": 346,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277409",
+    "name": "East Deplian Badlands",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1164,
+      "y": 100,
+      "z": -3674
+    },
+    "lat": -3674,
+    "lng": 1164,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277410",
+    "name": "West Deplian Badlands",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 139,
+      "y": 100,
+      "z": -3555
+    },
+    "lat": -3555,
+    "lng": 139,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277411",
+    "name": "Isle of Rabac",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1543,
+      "y": 100,
+      "z": -3069
+    },
+    "lat": -3069,
+    "lng": 1543,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277412",
+    "name": "Darunia Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1372,
+      "y": 100,
+      "z": -2850
+    },
+    "lat": -2850,
+    "lng": 1372,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277416",
+    "name": "Rauru Hillside",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 506,
+      "y": 100,
+      "z": -1530
+    },
+    "lat": -1530,
+    "lng": 506,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277417",
+    "name": "Elma Knolls",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -447,
+      "y": 100,
+      "z": -1817
+    },
+    "lat": -1817,
+    "lng": -447,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277418",
+    "name": "Irch Plain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -925,
+      "y": 100,
+      "z": -1440
+    },
+    "lat": -1440,
+    "lng": -925,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277420",
+    "name": "Breach of Demise",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1489,
+      "y": 100,
+      "z": -555
+    },
+    "lat": -555,
+    "lng": -1489,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277421",
+    "name": "North Hyrule Plain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1277,
+      "y": 100,
+      "z": -850
+    },
+    "lat": -850,
+    "lng": -1277,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277422",
+    "name": "Salari Hill",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1361,
+      "y": 100,
+      "z": -1512
+    },
+    "lat": -1512,
+    "lng": -1361,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277423",
+    "name": "Seres Scablands",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2408,
+      "y": 100,
+      "z": -421
+    },
+    "lat": -421,
+    "lng": -2408,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277424",
+    "name": "Ludfo's Bog",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2100,
+      "y": 100,
+      "z": -645
+    },
+    "lat": -645,
+    "lng": -2100,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277425",
+    "name": "Mount Rhoam",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2679,
+      "y": 100,
+      "z": -778
+    },
+    "lat": -778,
+    "lng": -2679,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277426",
+    "name": "West Hyrule Plains",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1582,
+      "y": 100,
+      "z": -249
+    },
+    "lat": -249,
+    "lng": -1582,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277431",
+    "name": "Mipha Court",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3834,
+      "y": 100,
+      "z": -537
+    },
+    "lat": -537,
+    "lng": 3834,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277457",
+    "name": "Tanagar Canyon",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2718,
+      "y": 100,
+      "z": -1518
+    },
+    "lat": -1518,
+    "lng": -2718,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277458",
+    "name": "Piper Ridge",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3475,
+      "y": 100,
+      "z": -669
+    },
+    "lat": -669,
+    "lng": -3475,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277459",
+    "name": "Rayne Highlands",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3775,
+      "y": 100,
+      "z": -456
+    },
+    "lat": -456,
+    "lng": -3775,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277460",
+    "name": "Nero Hill",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3620,
+      "y": 100,
+      "z": -956
+    },
+    "lat": -956,
+    "lng": -3620,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277461",
+    "name": "Strock Lake",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3375,
+      "y": 100,
+      "z": -1235
+    },
+    "lat": -1235,
+    "lng": -3375,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277463",
+    "name": "Cuho Mountain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3868,
+      "y": 100,
+      "z": -1343
+    },
+    "lat": -1343,
+    "lng": -3868,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277464",
+    "name": "Passer Hill",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3999,
+      "y": 100,
+      "z": -1612
+    },
+    "lat": -1612,
+    "lng": -3999,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277465",
+    "name": "Lake Totori",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3688,
+      "y": 100,
+      "z": -1939
+    },
+    "lat": -1939,
+    "lng": -3688,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277466",
+    "name": "Dronoc's Pass",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3795,
+      "y": 100,
+      "z": -2248
+    },
+    "lat": -2248,
+    "lng": -3795,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277467",
+    "name": "Hebra Trailhead Lodge",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3573,
+      "y": 100,
+      "z": -2258
+    },
+    "lat": -2258,
+    "lng": -3573,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277468",
+    "name": "Rospro Pass",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3561,
+      "y": 100,
+      "z": -2370
+    },
+    "lat": -2370,
+    "lng": -3561,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277472",
+    "name": "Corvash Peak",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3267,
+      "y": 100,
+      "z": -2433
+    },
+    "lat": -2433,
+    "lng": -3267,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277473",
+    "name": "Hebra South Summit",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3447,
+      "y": 100,
+      "z": -2576
+    },
+    "lat": -2576,
+    "lng": -3447,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277474",
+    "name": "Talonto Peak",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3189,
+      "y": 100,
+      "z": -2675
+    },
+    "lat": -2675,
+    "lng": -3189,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277475",
+    "name": "Lake Kilsie",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -4048,
+      "y": 100,
+      "z": -2429
+    },
+    "lat": -2429,
+    "lng": -4048,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277476",
+    "name": "Sturnida Basin",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -4102,
+      "y": 100,
+      "z": -2796
+    },
+    "lat": -2796,
+    "lng": -4102,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277477",
+    "name": "Biron Snowshelf",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3720,
+      "y": 100,
+      "z": -2979
+    },
+    "lat": -2979,
+    "lng": -3720,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277478",
+    "name": "Hebra West Summit",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -4438,
+      "y": 100,
+      "z": -3156
+    },
+    "lat": -3156,
+    "lng": -4438,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277479",
+    "name": "Hebra North Summit",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -4027,
+      "y": 100,
+      "z": -3613
+    },
+    "lat": -3613,
+    "lng": -4027,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277480",
+    "name": "Icefall Foothills",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -4343,
+      "y": 100,
+      "z": -3796
+    },
+    "lat": -3796,
+    "lng": -4343,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277481",
+    "name": "Hebra North Crest",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3553,
+      "y": 100,
+      "z": -3740
+    },
+    "lat": -3740,
+    "lng": -3553,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277482",
+    "name": "Hebra Tundra",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3434,
+      "y": 100,
+      "z": -3300
+    },
+    "lat": -3300,
+    "lng": -3434,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277490",
+    "name": "Floating Scales Island",
+    "category": "area",
+    "layer": "sky",
+    "position": {
+      "x": 4083,
+      "y": 1000,
+      "z": -537
+    },
+    "lat": -537,
+    "lng": 4083,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in the Sky."
+  },
+  {
+    "id": "area-277510",
+    "name": "Lockup",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -442,
+      "y": 100,
+      "z": -1061
+    },
+    "lat": -1061,
+    "lng": -442,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277718",
+    "name": "Salari Plain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1658,
+      "y": 100,
+      "z": -1734
+    },
+    "lat": -1734,
+    "lng": -1658,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277719",
+    "name": "Rowan Plain",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1274,
+      "y": 100,
+      "z": -2024
+    },
+    "lat": -2024,
+    "lng": -1274,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277720",
+    "name": "Forgotten Temple",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1534,
+      "y": 100,
+      "z": -2139
+    },
+    "lat": -2139,
+    "lng": -1534,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277721",
+    "name": "Lindor's Brow",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1933,
+      "y": 100,
+      "z": -1331
+    },
+    "lat": -1331,
+    "lng": -1933,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277722",
+    "name": "Upland Lindor",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2247,
+      "y": 100,
+      "z": -1361
+    },
+    "lat": -1361,
+    "lng": -2247,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277723",
+    "name": "Aldor Foothills",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -693,
+      "y": 100,
+      "z": -2139
+    },
+    "lat": -2139,
+    "lng": -693,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277724",
+    "name": "Kopeeki Drifts",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2350,
+      "y": 100,
+      "z": -2487
+    },
+    "lat": -2487,
+    "lng": -2350,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277725",
+    "name": "South Tabantha Snowfield",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1914,
+      "y": 100,
+      "z": -2413
+    },
+    "lat": -2413,
+    "lng": -1914,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277726",
+    "name": "North Tabantha Snowfield",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1904,
+      "y": 100,
+      "z": -3413
+    },
+    "lat": -3413,
+    "lng": -1904,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277727",
+    "name": "Pikida Stonegrove",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2310,
+      "y": 100,
+      "z": -3159
+    },
+    "lat": -3159,
+    "lng": -2310,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277728",
+    "name": "Coldsnap Hollow",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3091,
+      "y": 100,
+      "z": -2935
+    },
+    "lat": -2935,
+    "lng": -3091,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277729",
+    "name": "Hebra Peak",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2787,
+      "y": 100,
+      "z": -2901
+    },
+    "lat": -2901,
+    "lng": -2787,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277730",
+    "name": "Hebra East Summit",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2776,
+      "y": 100,
+      "z": -3018
+    },
+    "lat": -3018,
+    "lng": -2776,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277731",
+    "name": "Hebra Plunge",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3067,
+      "y": 100,
+      "z": -2140
+    },
+    "lat": -2140,
+    "lng": -3067,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277732",
+    "name": "Tama Pond",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2965,
+      "y": 100,
+      "z": -1892
+    },
+    "lat": -1892,
+    "lng": -2965,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277733",
+    "name": "Tabantha Hills",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2513,
+      "y": 100,
+      "z": -1791
+    },
+    "lat": -1791,
+    "lng": -2513,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277734",
+    "name": "Tabantha Village Ruins",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2340,
+      "y": 100,
+      "z": -1908
+    },
+    "lat": -1908,
+    "lng": -2340,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277806",
+    "name": "Gisa Crater",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3940,
+      "y": 100,
+      "z": -1062
+    },
+    "lat": -1062,
+    "lng": -3940,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-277812",
+    "name": "Great Plateau",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -953,
+      "y": 100,
+      "z": 1915
+    },
+    "lat": 1915,
+    "lng": -953,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-278016",
+    "name": "Gama Cove",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 3272,
+      "y": 100,
+      "z": 3418
+    },
+    "lat": 3418,
+    "lng": 3272,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-278316",
+    "name": "Medingo Pool",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2183,
+      "y": 100,
+      "z": -1759
+    },
+    "lat": -1759,
+    "lng": 2183,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-279413",
+    "name": "Golow River",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 1485,
+      "y": 100,
+      "z": -2547
+    },
+    "lat": -2547,
+    "lng": 1485,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-279497",
+    "name": "Military Training Camp",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 862,
+      "y": 100,
+      "z": -1437
+    },
+    "lat": -1437,
+    "lng": 862,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-279723",
+    "name": "Great Abandoned Central Mine",
+    "category": "area",
+    "layer": "depths",
+    "position": {
+      "x": -739,
+      "y": -500,
+      "z": 1861
+    },
+    "lat": 1861,
+    "lng": -739,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in the Depths."
+  },
+  {
+    "id": "area-279736",
+    "name": "Wellspring of Wisdom",
+    "category": "area",
+    "layer": "depths",
+    "position": {
+      "x": 3835,
+      "y": -500,
+      "z": 1272
+    },
+    "lat": 1272,
+    "lng": 3835,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in the Depths."
+  },
+  {
+    "id": "area-279747",
+    "name": "North Lomei Depths Labyrinth",
+    "category": "area",
+    "layer": "depths",
+    "position": {
+      "x": -821,
+      "y": -500,
+      "z": -3415
+    },
+    "lat": -3415,
+    "lng": -821,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in the Depths."
+  },
+  {
+    "id": "area-280707",
+    "name": "Sky Mine",
+    "category": "area",
+    "layer": "sky",
+    "position": {
+      "x": 4576,
+      "y": 1000,
+      "z": -2134
+    },
+    "lat": -2134,
+    "lng": 4576,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in the Sky."
+  },
+  {
+    "id": "area-280708",
+    "name": "Hebra Headspring",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2842,
+      "y": 100,
+      "z": -2421
+    },
+    "lat": -2421,
+    "lng": -2842,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-280709",
+    "name": "Hebra Falls",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2755,
+      "y": 100,
+      "z": -2315
+    },
+    "lat": -2315,
+    "lng": -2755,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-280818",
+    "name": "Rist Mine",
+    "category": "area",
+    "layer": "depths",
+    "position": {
+      "x": 4562,
+      "y": -500,
+      "z": -2081
+    },
+    "lat": -2081,
+    "lng": 4562,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in the Depths."
+  },
+  {
+    "id": "area-280832",
+    "name": "Minshi Grove",
+    "category": "area",
+    "layer": "depths",
+    "position": {
+      "x": 1047,
+      "y": -500,
+      "z": -1649
+    },
+    "lat": -1649,
+    "lng": 1047,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in the Depths."
+  },
+  {
+    "id": "area-280852",
+    "name": "Ancient Columns",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -3572,
+      "y": 100,
+      "z": -431
+    },
+    "lat": -431,
+    "lng": -3572,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-280857",
+    "name": "Thundra Plateau",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -2269,
+      "y": 100,
+      "z": -960
+    },
+    "lat": -960,
+    "lng": -2269,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-281730",
+    "name": "Gloom's Approach",
+    "category": "area",
+    "layer": "depths",
+    "position": {
+      "x": -246,
+      "y": -500,
+      "z": -906
+    },
+    "lat": -906,
+    "lng": -246,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in the Depths."
+  },
+  {
+    "id": "area-286628",
+    "name": "South Lomei Labyrinth",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": -1793,
+      "y": 100,
+      "z": 3426
+    },
+    "lat": 3426,
+    "lng": -1793,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-514800",
+    "name": "Lake Intenoch",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2527,
+      "y": 100,
+      "z": -1519
+    },
+    "lat": -1519,
+    "lng": 2527,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  },
+  {
+    "id": "area-937534",
+    "name": "Mount Rozudo",
+    "category": "area",
+    "layer": "surface",
+    "position": {
+      "x": 2404,
+      "y": 100,
+      "z": 2227
+    },
+    "lat": 2227,
+    "lng": 2404,
+    "icon": "/icons/genie/area.png",
+    "description": "Region / Area in Hyrule."
+  }
+]

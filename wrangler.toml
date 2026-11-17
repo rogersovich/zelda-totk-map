@@ -1,0 +1,8 @@
+name = "zelda-totk-map"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = "dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "totk-map-db"
+database_id = "eef566ee-812f-45ed-ad4e-4800d3ae5822"

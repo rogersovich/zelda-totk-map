@@ -1,0 +1,524 @@
+[
+  {
+    "id": "dispenser-276625",
+    "name": "Great Sky Island (South / Nachoyah)",
+    "location": "Great Sky Island",
+    "layer": "sky",
+    "position": {
+      "x": 438,
+      "y": 1200,
+      "z": 1682
+    },
+    "items": [
+      "Flame Emitter",
+      "Fan",
+      "Portable Pot"
+    ]
+  },
+  {
+    "id": "dispenser-276633",
+    "name": "Great Sky Island (East / Gutanbac)",
+    "location": "Great Sky Island",
+    "layer": "sky",
+    "position": {
+      "x": 772,
+      "y": 1200,
+      "z": 1255
+    },
+    "items": [
+      "Flame Emitter",
+      "Wing",
+      "Fan",
+      "Portable Pot"
+    ]
+  },
+  {
+    "id": "dispenser-277774",
+    "name": "Thunderhead Isles",
+    "location": "Faron Sky Archipelago",
+    "layer": "sky",
+    "position": {
+      "x": 444,
+      "y": 1200,
+      "z": -2826
+    },
+    "items": [
+      "Shock Emitter",
+      "Light",
+      "Steering Stick",
+      "Homing Cart"
+    ]
+  },
+  {
+    "id": "dispenser-278314",
+    "name": "South Eldin Sky Archipelago",
+    "location": "Above Death Mountain",
+    "layer": "sky",
+    "position": {
+      "x": 1983,
+      "y": 1200,
+      "z": -1226
+    },
+    "items": [
+      "Big Wheel",
+      "Hydrant",
+      "Battery",
+      "Fan"
+    ]
+  },
+  {
+    "id": "dispenser-278330",
+    "name": "East Hebra Sky Archipelago",
+    "location": "East Hebra Sky",
+    "layer": "sky",
+    "position": {
+      "x": 1783,
+      "y": 1200,
+      "z": 1093
+    },
+    "items": [
+      "Cannon",
+      "Wing",
+      "Spring",
+      "Time Bomb"
+    ]
+  },
+  {
+    "id": "dispenser-278391",
+    "name": "Construct Factory (Left-Arm Depot)",
+    "location": "Depths Construct Factory",
+    "layer": "depths",
+    "position": {
+      "x": 2192,
+      "y": -500,
+      "z": -2649
+    },
+    "items": [
+      "Big Wheel",
+      "Steering Stick",
+      "Portable Pot",
+      "Battery"
+    ]
+  },
+  {
+    "id": "dispenser-279474",
+    "name": "Kakariko Village / Ring Ruins",
+    "location": "West Necluda / Kakariko",
+    "layer": "surface",
+    "position": {
+      "x": 1840,
+      "y": 100,
+      "z": 1096
+    },
+    "items": [
+      "Balloon",
+      "Fan",
+      "Big Wheel",
+      "Stabilizer"
+    ]
+  },
+  {
+    "id": "dispenser-279500",
+    "name": "North Hyrule Sky Archipelago",
+    "location": "North Hyrule Sky",
+    "layer": "sky",
+    "position": {
+      "x": 2918,
+      "y": 1200,
+      "z": -509
+    },
+    "items": [
+      "Cart",
+      "Wing",
+      "Fan",
+      "Beam Emitter"
+    ]
+  },
+  {
+    "id": "dispenser-279658",
+    "name": "South Hyrule Sky Archipelago",
+    "location": "Near Jinodok Shrine",
+    "layer": "sky",
+    "position": {
+      "x": -1213,
+      "y": 1200,
+      "z": 1581
+    },
+    "items": [
+      "Time Bomb",
+      "Small Wheel",
+      "Light",
+      "Rocket"
+    ]
+  },
+  {
+    "id": "dispenser-279695",
+    "name": "Wind Temple / Rising Island Chain",
+    "location": "North Hebra Sky",
+    "layer": "sky",
+    "position": {
+      "x": -3809,
+      "y": 1200,
+      "z": -2766
+    },
+    "items": [
+      "Rocket",
+      "Flame Emitter",
+      "Portable Pot",
+      "Time Bomb"
+    ]
+  },
+  {
+    "id": "dispenser-279770",
+    "name": "Digdogg Suspension Bridge",
+    "location": "Hyrule Field / Gerudo Canyon",
+    "layer": "surface",
+    "position": {
+      "x": -1622,
+      "y": 100,
+      "z": 1891
+    },
+    "items": [
+      "Stake",
+      "Big Wheel",
+      "Spring",
+      "Portable Pot",
+      "Battery"
+    ]
+  },
+  {
+    "id": "dispenser-279818",
+    "name": "West Hebra Sky Archipelago",
+    "location": "West Hebra Sky",
+    "layer": "sky",
+    "position": {
+      "x": -1711,
+      "y": 1200,
+      "z": -3385
+    },
+    "items": [
+      "Wing",
+      "Sled",
+      "Fan",
+      "Cart",
+      "Light"
+    ]
+  },
+  {
+    "id": "dispenser-279848",
+    "name": "Tabantha Sky Archipelago",
+    "location": "Tabantha Sky",
+    "layer": "sky",
+    "position": {
+      "x": -3454,
+      "y": 1200,
+      "z": -401
+    },
+    "items": [
+      "Wing",
+      "Frost Emitter",
+      "Small Wheel",
+      "Mirror"
+    ]
+  },
+  {
+    "id": "dispenser-279855",
+    "name": "Sokorrra / Dragonhead Island",
+    "location": "Thunderhead Isles",
+    "layer": "sky",
+    "position": {
+      "x": 2852,
+      "y": 1200,
+      "z": 2952
+    },
+    "items": [
+      "Small Wheel",
+      "Steering Stick",
+      "Cannon",
+      "Light"
+    ]
+  },
+  {
+    "id": "dispenser-280091",
+    "name": "Courage Island (Dive Trial)",
+    "location": "Central Hyrule Sky",
+    "layer": "sky",
+    "position": {
+      "x": -2370,
+      "y": 1200,
+      "z": -787
+    },
+    "items": [
+      "Balloon",
+      "Fan",
+      "Portable Pot",
+      "Time Bomb"
+    ]
+  },
+  {
+    "id": "dispenser-280118",
+    "name": "Hudson Construction Site / Tarrey Town",
+    "location": "Akkala / Torin Wetland",
+    "layer": "surface",
+    "position": {
+      "x": 3811,
+      "y": 100,
+      "z": -1563
+    },
+    "items": [
+      "Fan",
+      "Small Wheel",
+      "Balloon",
+      "Big Wheel",
+      "Rocket",
+      "Steering Stick"
+    ]
+  },
+  {
+    "id": "dispenser-280683",
+    "name": "Valor Island (Dive Trial)",
+    "location": "South Lanayru Sky",
+    "layer": "sky",
+    "position": {
+      "x": 4508,
+      "y": 1200,
+      "z": 797
+    },
+    "items": [
+      "Spring",
+      "Hydrant",
+      "Beam Emitter",
+      "Steering Stick"
+    ]
+  },
+  {
+    "id": "dispenser-280763",
+    "name": "Gerudo Sky Archipelago",
+    "location": "Gerudo Sky",
+    "layer": "sky",
+    "position": {
+      "x": -3610,
+      "y": 1200,
+      "z": -1069
+    },
+    "items": [
+      "Mirror",
+      "Balloon",
+      "Spring",
+      "Wing",
+      "Hover Stone"
+    ]
+  },
+  {
+    "id": "dispenser-280969",
+    "name": "South Gerudo Sky Archipelago",
+    "location": "South Gerudo Sky",
+    "layer": "sky",
+    "position": {
+      "x": -1771,
+      "y": 1200,
+      "z": 2017
+    },
+    "items": [
+      "Beam Emitter",
+      "Sled",
+      "Mirror",
+      "Steering Stick",
+      "Stake"
+    ]
+  },
+  {
+    "id": "dispenser-280976",
+    "name": "Wellspring Island / Water Temple",
+    "location": "Lanayru Sky Archipelago",
+    "layer": "sky",
+    "position": {
+      "x": 4561,
+      "y": 1200,
+      "z": -2082
+    },
+    "items": [
+      "Hover Stone",
+      "Time Bomb",
+      "Homing Cart",
+      "Hydrant"
+    ]
+  },
+  {
+    "id": "dispenser-280995",
+    "name": "Eldin Sky Archipelago",
+    "location": "Eldin Sky",
+    "layer": "sky",
+    "position": {
+      "x": 219,
+      "y": 1200,
+      "z": -1988
+    },
+    "items": [
+      "Light",
+      "Flame Emitter",
+      "Battery",
+      "Construct Head"
+    ]
+  },
+  {
+    "id": "dispenser-281012",
+    "name": "Lanayru Sky Archipelago",
+    "location": "Lanayru Sky",
+    "layer": "sky",
+    "position": {
+      "x": 3430,
+      "y": 1200,
+      "z": -640
+    },
+    "items": [
+      "Fan",
+      "Hover Stone",
+      "Wing",
+      "Battery",
+      "Stabilizer"
+    ]
+  },
+  {
+    "id": "dispenser-281381",
+    "name": "Starview Island (Spherical Island)",
+    "location": "North Gerudo Sky",
+    "layer": "sky",
+    "position": {
+      "x": -3452,
+      "y": 1200,
+      "z": 370
+    },
+    "items": [
+      "Stake",
+      "Shock Emitter",
+      "Sled",
+      "Stabilizer",
+      "Frost Emitter"
+    ]
+  },
+  {
+    "id": "dispenser-281478",
+    "name": "Bravery Island (Dive Trial)",
+    "location": "North Tabantha Sky",
+    "layer": "sky",
+    "position": {
+      "x": 2325,
+      "y": 1200,
+      "z": 1718
+    },
+    "items": [
+      "Homing Cart",
+      "Beam Emitter",
+      "Flame Emitter",
+      "Frost Emitter",
+      "Time Bomb"
+    ]
+  },
+  {
+    "id": "dispenser-281486",
+    "name": "West Necluda Sky Archipelago",
+    "location": "West Necluda Sky",
+    "layer": "sky",
+    "position": {
+      "x": 1346,
+      "y": 1200,
+      "z": 2148
+    },
+    "items": [
+      "Construct Head",
+      "Cart",
+      "Balloon",
+      "Stabilizer",
+      "Hydrant"
+    ]
+  },
+  {
+    "id": "dispenser-281617",
+    "name": "Necluda Sky Archipelago",
+    "location": "South Necluda Sky",
+    "layer": "sky",
+    "position": {
+      "x": 4683,
+      "y": 1200,
+      "z": 1022
+    },
+    "items": [
+      "Frost Emitter",
+      "Wing",
+      "Battery",
+      "Mirror"
+    ]
+  },
+  {
+    "id": "dispenser-281930",
+    "name": "Sikukuu / North Eldin Sky",
+    "location": "North Eldin Sky",
+    "layer": "sky",
+    "position": {
+      "x": 3754,
+      "y": 1200,
+      "z": -1545
+    },
+    "items": [
+      "Homing Cart",
+      "Stake",
+      "Cart",
+      "Cannon",
+      "Construct Head"
+    ]
+  },
+  {
+    "id": "dispenser-282086",
+    "name": "South Hyrule Sky (East)",
+    "location": "South Hyrule Sky",
+    "layer": "sky",
+    "position": {
+      "x": 1397,
+      "y": 1200,
+      "z": 3240
+    },
+    "items": [
+      "Wing",
+      "Cart",
+      "Fan",
+      "Steering Stick"
+    ]
+  },
+  {
+    "id": "dispenser-282455",
+    "name": "Faron Sky Archipelago",
+    "location": "Faron Sky",
+    "layer": "sky",
+    "position": {
+      "x": 1106,
+      "y": 1200,
+      "z": 3324
+    },
+    "items": [
+      "Shock Emitter",
+      "Fan",
+      "Portable Pot",
+      "Battery"
+    ]
+  },
+  {
+    "id": "dispenser-282588",
+    "name": "Great Abandoned Central Mine",
+    "location": "Depths Central Mine",
+    "layer": "depths",
+    "position": {
+      "x": 1054,
+      "y": -500,
+      "z": 2310
+    },
+    "items": [
+      "Wing",
+      "Small Wheel",
+      "Big Wheel",
+      "Rocket",
+      "Steering Stick",
+      "Construct Head"
+    ]
+  }
+]
