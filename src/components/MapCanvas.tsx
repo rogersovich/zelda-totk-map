@@ -419,8 +419,8 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({ markers }) => {
         weight: 1.8,
         dashArray: '6, 6',
         opacity: 0.7,
-        fillColor: b.fillColor,
-        fillOpacity: 1,
+        fillColor: b.color,
+        fillOpacity: 0.06,
       });
 
       poly.bindTooltip(
@@ -429,10 +429,10 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({ markers }) => {
       );
 
       poly.on('mouseover', () => {
-        poly.setStyle({ weight: 3, opacity: 0.95, fillOpacity: 1.6 });
+        poly.setStyle({ weight: 2.8, opacity: 0.95, fillOpacity: 0.14 });
       });
       poly.on('mouseout', () => {
-        poly.setStyle({ weight: 1.8, opacity: 0.7, fillOpacity: 1 });
+        poly.setStyle({ weight: 1.8, opacity: 0.7, fillOpacity: 0.06 });
       });
 
       poly.addTo(provinceGroup);

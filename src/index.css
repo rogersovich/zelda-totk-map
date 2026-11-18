@@ -17,6 +17,13 @@ html, body, #root {
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif !important;
 }
 
+/* Remove default browser blue rectangular focus outline when clicking SVG polygons/paths */
+.leaflet-interactive:focus,
+.leaflet-container path:focus,
+.leaflet-container svg:focus {
+  outline: none !important;
+}
+
 /* Neutralize Chromium plus-lighter bug that causes glowing yellow grid lines / seams */
 .leaflet-container img.leaflet-tile {
   mix-blend-mode: normal !important;
