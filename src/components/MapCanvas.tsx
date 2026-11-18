@@ -24,6 +24,40 @@ const MAP_SIZE = [24000, 20000];
 const MAP_VIEW_KEY = 'zelda_totk_map_view_v1';
 const DENSE_CLUSTER_CATEGORIES = new Set(['cave', 'bubbul', 'well', 'chasm']);
 
+function createClusterPinHtml(iconUrl: string, hex: string, count: number): string {
+  return `
+    <div class="totk-cluster-pin-wrapper">
+      <svg width="36" height="44" viewBox="0 0 36 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M 19 39 L 8.5 26.8 A 14 14 0 1 1 29.5 26.8 Z"
+          fill="${hex}"
+          opacity="0.38"
+          transform="translate(3, -3)"
+        />
+        <path
+          d="M 16 42 L 4.63 28.78 A 15 15 0 1 1 27.37 28.78 Z"
+          fill="${hex}"
+          stroke="rgba(255,255,255,0.25)"
+          stroke-width="1"
+        />
+        <image
+          href="${iconUrl}"
+          xlink:href="${iconUrl}"
+          x="5.5"
+          y="8.5"
+          width="21"
+          height="21"
+          preserveAspectRatio="xMidYMid meet"
+          style="pointer-events: none; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges;"
+        />
+      </svg>
+      <div class="totk-cluster-count-pill" style="border-color: ${hex};">
+        ${count}
+      </div>
+    </div>
+  `;
+}
+
 // Subpixel seam fix: Expand tiles by 1px so adjacent tiles seamlessly overlap by 1 subpixel.
 // Completely eliminates browser Chromium/WebKit 1px grid lines/seams without canvas redraw bugs.
 const originalInitTile = (L.GridLayer.prototype as any)._initTile;
@@ -182,6 +216,7 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({ markers }) => {
     // Create layer groups
     const provinceGroup = L.layerGroup().addTo(map);
     const markerGroup = L.layerGroup().addTo(map);
+    const korokThemeHex = getCategoryTheme('korok').hex;
     const korokClusterGroup = L.markerClusterGroup({
       chunkedLoading: true,
       maxClusterRadius: 55,
@@ -190,11 +225,11 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({ markers }) => {
       showCoverageOnHover: false,
       iconCreateFunction: (cluster) => {
         const count = cluster.getChildCount();
-        const size = count >= 100 ? 38 : count >= 10 ? 34 : 30;
         return L.divIcon({
-          html: `<div class="totk-cluster-badge is-korok"><span>🌿</span><span>${count}</span></div>`,
+          html: createClusterPinHtml('/icons/genie/korok_seed.png', korokThemeHex, count),
           className: 'totk-cluster-icon',
-          iconSize: L.point(size, size),
+          iconSize: L.point(36, 44),
+          iconAnchor: L.point(16, 42),
         });
       },
     }).addTo(map);
@@ -207,11 +242,16 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({ markers }) => {
       showCoverageOnHover: false,
       iconCreateFunction: (cluster) => {
         const count = cluster.getChildCount();
-        const size = count >= 100 ? 38 : count >= 10 ? 34 : 30;
+        const children = cluster.getAllChildMarkers();
+        const meta = (children[0] as any)?._totkMeta || {
+          icon: '/icons/genie/cave.png',
+          hex: '#38bdf8',
+        };
         return L.divIcon({
-          html: `<div class="totk-cluster-badge is-dense"><span>📍</span><span>${count}</span></div>`,
+          html: createClusterPinHtml(meta.icon, meta.hex, count),
           className: 'totk-cluster-icon',
-          iconSize: L.point(size, size),
+          iconSize: L.point(36, 44),
+          iconAnchor: L.point(16, 42),
         });
       },
     }).addTo(map);
@@ -580,6 +620,7 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({ markers }) => {
       });
 
       const marker = L.marker([m.lat, m.lng], { icon: customIcon });
+      (marker as any)._totkMeta = { icon: m.icon, hex: theme.hex };
 
       // Hover tooltip (Image 1 style)
       marker.bindTooltip(
