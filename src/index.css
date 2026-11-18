@@ -17,8 +17,12 @@ html, body, #root {
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif !important;
 }
 
-/* Remove default browser blue rectangular focus outline when clicking SVG polygons/paths */
+/* Remove default browser blue rectangular focus outline when clicking Leaflet map/markers/paths */
+.leaflet-container:focus,
 .leaflet-interactive:focus,
+.leaflet-marker-icon:focus,
+.leaflet-div-icon:focus,
+.leaflet-control a:focus,
 .leaflet-container path:focus,
 .leaflet-container svg:focus {
   outline: none !important;
