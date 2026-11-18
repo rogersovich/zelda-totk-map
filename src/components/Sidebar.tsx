@@ -26,6 +26,8 @@ import {
   Plus,
   Trash2,
   Edit3,
+  Shield,
+  Map as MapIcon,
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -37,6 +39,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ markers }) => {
     activeLayer,
     setActiveLayer,
     flyToLocation,
+    setSelectedMarker,
     searchQuery,
     setSearchQuery,
     activeCategories,
@@ -45,6 +48,9 @@ export const Sidebar: React.FC<SidebarProps> = ({ markers }) => {
     disableAllCategories,
     showDragons,
     toggleDragons,
+    showProvinceBoundaries,
+    toggleProvinceBoundaries,
+    openArmorModal,
     selectedZonaiPart,
     setSelectedZonaiPart,
     completedItems,
@@ -68,6 +74,47 @@ export const Sidebar: React.FC<SidebarProps> = ({ markers }) => {
   const [zonaiFinderOpen, setZonaiFinderOpen] = useState(false);
   const [customPinsOpen, setCustomPinsOpen] = useState(false);
   const [farmingRoutesOpen, setFarmingRoutesOpen] = useState(false);
+  const [searchFocused, setSearchFocused] = useState(false);
+  const [searchQuickCat, setSearchQuickCat] = useState<string>('all');
+
+  // Instant Autocomplete Suggestions across all layers
+  const searchSuggestions = useMemo(() => {
+    const q = searchQuery.trim().toLowerCase();
+    if (q.length < 2 && searchQuickCat === 'all') return [];
+
+    const matches = markers.filter((m) => {
+      if (searchQuickCat !== 'all' && m.category !== searchQuickCat) return false;
+      if (!q) return true;
+      return (
+        m.name.toLowerCase().includes(q) ||
+        m.description?.toLowerCase().includes(q) ||
+        m.items?.some((it) => it.toLowerCase().includes(q))
+      );
+    });
+
+    // Prioritize exact prefix matches on name
+    if (q) {
+      matches.sort((a, b) => {
+        const aStarts = a.name.toLowerCase().startsWith(q) ? 0 : 1;
+        const bStarts = b.name.toLowerCase().startsWith(q) ? 0 : 1;
+        return aStarts - bStarts;
+      });
+    }
+
+    return matches.slice(0, 14);
+  }, [markers, searchQuery, searchQuickCat]);
+
+  const handleSelectSuggestion = (m: MarkerPoint) => {
+    if (m.layer !== activeLayer) {
+      setActiveLayer(m.layer);
+    }
+    if (!activeCategories.has(m.category)) {
+      toggleCategory(m.category);
+    }
+    flyToLocation(m.lat, m.lng, 6, m.id);
+    setSelectedMarker(m);
+    setSearchFocused(false);
+  };
 
   // Matching dispensers for the active Zonai part
   const matchingDispensers = useMemo(() => {
@@ -285,23 +332,112 @@ export const Sidebar: React.FC<SidebarProps> = ({ markers }) => {
             </button>
           </div>
 
-          {/* Instant Search Bar */}
-          <div className="relative">
-            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
-            <input
-              type="text"
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search Shrines, Caves, Bosses..."
-              className="w-full bg-[#100E0D] border border-[#2E2824] rounded-lg pl-9 pr-9 py-2 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-totk-zonai transition font-medium"
-            />
-            {searchQuery && (
-              <button
-                onClick={() => setSearchQuery('')}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white"
-              >
-                <X className="w-3.5 h-3.5" />
-              </button>
+          {/* Instant Search Bar + Autocomplete */}
+          <div className="relative z-30">
+            <div className="relative">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
+              <input
+                type="text"
+                value={searchQuery}
+                onFocus={() => setSearchFocused(true)}
+                onChange={(e) => {
+                  setSearchQuery(e.target.value);
+                  setSearchFocused(true);
+                }}
+                placeholder="Search Shrines, Caves, Bosses..."
+                className="w-full bg-[#100E0D] border border-[#2E2824] rounded-lg pl-9 pr-9 py-2 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-totk-zonai transition font-medium"
+              />
+              {(searchQuery || searchQuickCat !== 'all') && (
+                <button
+                  onClick={() => {
+                    setSearchQuery('');
+                    setSearchQuickCat('all');
+                    setSearchFocused(false);
+                  }}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-white"
+                  title="Clear search"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
+            </div>
+
+            {/* Quick Filter Pills */}
+            {(searchFocused || searchQuery.trim().length > 0 || searchQuickCat !== 'all') && (
+              <div className="flex items-center gap-1 mt-1.5 overflow-x-auto pb-1 no-scrollbar">
+                {[
+                  { id: 'all', label: 'All' },
+                  { id: 'shrine', label: 'Shrines' },
+                  { id: 'cave', label: 'Caves' },
+                  { id: 'korok', label: 'Koroks' },
+                  { id: 'lightroot', label: 'Lightroots' },
+                  { id: 'dispenser', label: 'Zonai' },
+                ].map((chip) => (
+                  <button
+                    key={chip.id}
+                    type="button"
+                    onClick={() => {
+                      setSearchQuickCat(chip.id);
+                      setSearchFocused(true);
+                    }}
+                    className={`px-2 py-0.5 rounded-full text-[10px] font-semibold border whitespace-nowrap transition ${
+                      searchQuickCat === chip.id
+                        ? 'bg-cyan-500/20 border-cyan-400/60 text-cyan-300'
+                        : 'bg-[#12100F] border-[#2E2824] text-gray-400 hover:text-gray-200'
+                    }`}
+                  >
+                    {chip.label}
+                  </button>
+                ))}
+              </div>
+            )}
+
+            {/* Autocomplete Dropdown */}
+            {searchFocused && (searchQuery.trim().length >= 2 || searchQuickCat !== 'all') && (
+              <div className="mt-1 bg-[#141211] border border-[#38302A] rounded-lg shadow-2xl max-h-60 overflow-y-auto custom-scrollbar divide-y divide-[#25201C]">
+                <div className="flex items-center justify-between px-2.5 py-1.5 bg-[#100E0D] text-[10px] text-gray-400 sticky top-0 z-10">
+                  <span>
+                    {searchSuggestions.length > 0
+                      ? `Hasil (${searchSuggestions.length}${searchSuggestions.length === 14 ? '+' : ''})`
+                      : 'Tidak ada hasil'}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => setSearchFocused(false)}
+                    className="text-gray-400 hover:text-white underline"
+                  >
+                    Tutup
+                  </button>
+                </div>
+                {searchSuggestions.map((m) => {
+                  const isDone = Boolean(completedItems[m.id]);
+                  return (
+                    <button
+                      key={m.id}
+                      type="button"
+                      onClick={() => handleSelectSuggestion(m)}
+                      className="w-full text-left px-2.5 py-2 hover:bg-[#1E1A17] flex items-center gap-2.5 transition"
+                    >
+                      <img src={m.icon} alt="" className="w-5 h-5 object-contain shrink-0" />
+                      <div className="min-w-0 flex-1">
+                        <div className="text-xs font-semibold text-white truncate flex items-center gap-1.5">
+                          <span className="truncate">{m.name}</span>
+                          {isDone && (
+                            <span className="text-[9px] px-1 py-0.2 rounded bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">
+                              ✓
+                            </span>
+                          )}
+                        </div>
+                        <div className="text-[10px] text-gray-400 flex items-center gap-1.5 uppercase tracking-wider">
+                          <span className="text-cyan-400/90">{m.layer}</span>
+                          <span>•</span>
+                          <span>{m.category.replace('_', ' ')}</span>
+                        </div>
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
             )}
           </div>
 
@@ -395,6 +531,55 @@ export const Sidebar: React.FC<SidebarProps> = ({ markers }) => {
               />
             </button>
           </div>
+
+          {/* Province Boundary Overlay Toggle */}
+          <div className="bg-[#131110] border border-[#2A2420] rounded-lg p-2 flex items-center justify-between">
+            <div className="flex items-center space-x-2">
+              <div className="w-6 h-6 rounded bg-cyan-500/20 text-cyan-400 flex items-center justify-center">
+                <MapIcon className="w-3.5 h-3.5" />
+              </div>
+              <div>
+                <div className="text-[11px] font-bold text-[#EAE2D5]">Province Boundaries</div>
+                <div className="text-[9px] text-gray-400">Hebra, Eldin, Akkala, Gerudo, Faron...</div>
+              </div>
+            </div>
+            <button
+              onClick={toggleProvinceBoundaries}
+              className={`w-8 h-4 rounded-full p-0.5 transition-colors duration-200 ease-in-out ${
+                showProvinceBoundaries ? 'bg-cyan-500' : 'bg-gray-700'
+              }`}
+            >
+              <div
+                className={`w-3 h-3 bg-white rounded-full shadow-md transform transition-transform duration-200 ease-in-out ${
+                  showProvinceBoundaries ? 'translate-x-4' : 'translate-x-0'
+                }`}
+              />
+            </button>
+          </div>
+
+          {/* Armor Sets & Great Fairy Upgrade Planner Button */}
+          <button
+            type="button"
+            onClick={openArmorModal}
+            className="w-full bg-[#131110] hover:bg-[#1a1715] border border-[#2A2420] hover:border-amber-500/40 rounded-lg p-2 flex items-center justify-between transition group"
+          >
+            <div className="flex items-center space-x-2">
+              <div className="w-6 h-6 rounded bg-amber-500/20 text-amber-400 flex items-center justify-center">
+                <Shield className="w-3.5 h-3.5" />
+              </div>
+              <div className="text-left">
+                <div className="text-[11px] font-bold text-[#EAE2D5] group-hover:text-amber-300 transition">
+                  Armor & Great Fairy Planner
+                </div>
+                <div className="text-[9px] text-gray-400">
+                  Track Armor Sets & ★1–★4 Upgrade Materials
+                </div>
+              </div>
+            </div>
+            <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-500/15 text-amber-300 border border-amber-500/30">
+              Open
+            </span>
+          </button>
 
           {/* My Custom Pins Collapsible */}
           <div className="bg-[#131110] border border-[#2A2420] rounded-lg p-2 space-y-1.5">

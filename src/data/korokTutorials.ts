@@ -125,5 +125,54 @@ export const KOROK_TUTORIALS: Record<string, KorokTutorial> = {
     shortDesc: "Bell suspended under ruins or structures.",
     instruction: "Use Ultrahand to swing a weight into the bell or strike it with an arrow to make it chime.",
     reward: "1 Korok Seed"
+  },
+  "Moving Lights": {
+    title: "Moving Sparkle Trail",
+    icon: "💫",
+    shortDesc: "Glowing ring of leaves zipping rapidly along the ground, water, or branches.",
+    instruction: "Watch the path of the moving sparkles, intercept it, and press Examine (A) as it passes by. Use Recall or Sprint if needed.",
+    reward: "1 Korok Seed"
+  },
+  "Stationary Lights": {
+    title: "Hidden Sparkles (Examine)",
+    icon: "✨",
+    shortDesc: "Shimmering golden/green leaves hovering in place on a high perch, treetop, or tip.",
+    instruction: "Climb or glide up to the exact sparkling spot (often at the very tip of a spire, statue, or tree) and press Examine (A).",
+    reward: "1 Korok Seed"
+  },
+  "Catch the Seed": {
+    title: "Falling Dandelion Puff",
+    icon: "🌼",
+    shortDesc: "A large white dandelion puff waiting on a cliff or rock.",
+    instruction: "Strike the dandelion puff to launch the floating Korok seed into the air, then glide/catch it in mid-air before it touches the ground!",
+    reward: "1 Korok Seed"
+  },
+  "Acorn in a Hole": {
+    title: "Acorn / Ball & Chain Hole",
+    icon: "🌰",
+    shortDesc: "Hollow tree trunk or log with an acorn attached nearby.",
+    instruction: "Use Ultrahand to pick up the nearby acorn (or attached wooden ball) and drop it cleanly into the hollow hole of the tree stump.",
+    reward: "1 Korok Seed"
+  },
+  "Provide Shelter": {
+    title: "Mini Statue Shelter",
+    icon: "⛩️",
+    shortDesc: "Small wooden shrine/statue exposed to the sky without a roof.",
+    instruction: "Find nearby wooden boards or stone slabs with Ultrahand and place them securely on top of the frame to shelter the statue.",
+    reward: "1 Korok Seed"
+  },
+  "Stationary Balloon": {
+    title: "Hidden Balloon Target",
+    icon: "🎈",
+    shortDesc: "A stationary balloon tucked behind rocks, inside tree hollows, or under arches.",
+    instruction: "Look around carefully for the hidden red/orange target balloon and shoot it with an arrow (or throw a weapon/material).",
+    reward: "1 Korok Seed"
+  },
+  "Touch the Target": {
+    title: "Mid-Air / Cliff Target Ring",
+    icon: "🎯",
+    shortDesc: "A glowing green/gold Korok ring suspended in the air or along a glide path.",
+    instruction: "Paraglide, dive, or launch yourself directly through the floating target ring to complete it.",
+    reward: "1 Korok Seed"
   }
 };

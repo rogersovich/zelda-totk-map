@@ -4,6 +4,7 @@ import { useMapStore } from '../store/useMapStore';
 import {
   X,
   Link2,
+  Share2,
   Check,
   Sparkles,
   Play,
@@ -101,6 +102,7 @@ function renderMarkdownContent(content: string): React.ReactNode {
 export const MarkerPopover: React.FC<MarkerPopoverProps> = ({ marker, onClose }) => {
   const { completedItems, toggleCompleted, jumpToTwin } = useMapStore();
   const [copied, setCopied] = useState(false);
+  const [shared, setShared] = useState(false);
 
   const isDone = completedItems[marker.id] || false;
 
@@ -110,6 +112,20 @@ export const MarkerPopover: React.FC<MarkerPopoverProps> = ({ marker, onClose })
     navigator.clipboard.writeText(text);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+  };
+
+  const handleShareLink = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    const url = new URL(window.location.href);
+    url.searchParams.set('layer', marker.layer);
+    url.searchParams.set('lat', String(Math.round(marker.lat)));
+    url.searchParams.set('lng', String(Math.round(marker.lng)));
+    url.searchParams.set('zoom', '6');
+    url.searchParams.set('marker', marker.id);
+    navigator.clipboard.writeText(url.toString());
+    window.history.replaceState({}, '', url.toString());
+    setShared(true);
+    setTimeout(() => setShared(false), 2000);
   };
 
   const handleToggle = (e: React.MouseEvent) => {
@@ -228,6 +244,19 @@ export const MarkerPopover: React.FC<MarkerPopoverProps> = ({ marker, onClose })
           </h3>
 
           <div className="flex items-center space-x-1 shrink-0">
+            {/* Share Deeplink URL */}
+            <button
+              onClick={handleShareLink}
+              className="p-1 rounded text-gray-400 hover:text-cyan-300 hover:bg-cyan-500/10 transition relative"
+              title="Copy Shareable Map Link"
+            >
+              {shared ? (
+                <Check className="w-4 h-4 text-cyan-400" />
+              ) : (
+                <Share2 className="w-4 h-4 text-gray-300" />
+              )}
+            </button>
+
             {/* Copy Coordinates Link */}
             <button
               onClick={handleCopyCoords}
@@ -388,16 +417,24 @@ export const MarkerPopover: React.FC<MarkerPopoverProps> = ({ marker, onClose })
 
         {/* Korok Tutorial Card */}
         {marker.tutorial && (
-          <div className="bg-lime-950/30 border border-lime-500/30 rounded p-2.5 text-xs">
-            <div className="flex items-center space-x-1.5 text-lime-400 font-semibold mb-1">
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>Puzzle: {marker.tutorial.title}</span>
+          <div className="bg-lime-950/30 border border-lime-500/35 rounded-lg p-2.5 text-xs space-y-1.5">
+            <div className="flex items-center justify-between gap-2">
+              <div className="flex items-center space-x-1.5 text-lime-300 font-bold">
+                <span className="text-sm leading-none">{marker.tutorial.icon}</span>
+                <span>{marker.tutorial.title}</span>
+              </div>
+              <span className="text-[10px] px-1.5 py-0.5 rounded bg-lime-500/20 text-lime-300 border border-lime-500/30 font-mono font-semibold">
+                {marker.tutorial.reward}
+              </span>
             </div>
-            <p className="text-gray-200 leading-relaxed text-[11.5px]">
+            {marker.tutorial.shortDesc && (
+              <div className="text-[11px] text-lime-200/75 italic">
+                {marker.tutorial.shortDesc}
+              </div>
+            )}
+            <div className="bg-black/25 rounded p-2 border border-lime-500/20 text-gray-200 leading-relaxed text-[11.5px]">
+              <span className="font-bold text-lime-400 mr-1">Solusi:</span>
               {marker.tutorial.instruction}
-            </p>
-            <div className="mt-1.5 text-[10px] text-lime-300/80 font-mono">
-              Reward: <strong>{marker.tutorial.reward}</strong>
             </div>
           </div>
         )}

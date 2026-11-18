@@ -6,6 +6,7 @@ import { LayerSwitcher } from './components/LayerSwitcher';
 import { Sidebar } from './components/Sidebar';
 import { CustomPinModal } from './components/CustomPinModal';
 import { AuthModal } from './components/AuthModal';
+import { ArmorPlannerModal } from './components/ArmorPlannerModal';
 import { useMapStore } from './store/useMapStore';
 import { Route as RouteIcon, X as CloseIcon } from 'lucide-react';
 
@@ -16,6 +17,9 @@ export const App: React.FC = () => {
     setActiveFarmingRoute,
     flyToLocation,
     setActiveLayer,
+    setSelectedMarker,
+    activeCategories,
+    toggleCategory,
     initAuth,
   } = useMapStore();
 
@@ -32,6 +36,46 @@ export const App: React.FC = () => {
     return loadAllMarkers();
   }, []);
 
+  // Handle Shareable URL / Deeplink (?layer=...&lat=...&lng=...&zoom=...&marker=...)
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const layerParam = params.get('layer');
+    const markerId = params.get('marker');
+    const latParam = params.get('lat');
+    const lngParam = params.get('lng');
+    const zoomParam = Number(params.get('zoom')) || 6;
+
+    if (!markerId && (!latParam || !lngParam)) return;
+
+    if (markerId) {
+      const target = allMarkers.find((m) => m.id === markerId);
+      if (target) {
+        setActiveLayer(target.layer);
+        if (!activeCategories.has(target.category)) {
+          toggleCategory(target.category);
+        }
+        setTimeout(() => {
+          flyToLocation(target.lat, target.lng, zoomParam, target.id);
+          setSelectedMarker(target);
+        }, 250);
+        return;
+      }
+    }
+
+    const lat = Number(latParam);
+    const lng = Number(lngParam);
+    if (!Number.isNaN(lat) && !Number.isNaN(lng)) {
+      if (layerParam === 'surface' || layerParam === 'sky' || layerParam === 'depths') {
+        setActiveLayer(layerParam);
+      }
+      setTimeout(() => {
+        flyToLocation(lat, lng, zoomParam);
+      }, 250);
+    }
+    // Run only once on initial mount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <div className="relative w-screen h-screen overflow-hidden bg-totk-bg select-none">
       {/* Interactive Leaflet Map Canvas with Anchor Popovers */}
@@ -42,6 +86,9 @@ export const App: React.FC = () => {
 
       {/* Cloudflare D1 Auth & Cloud Sync Modal */}
       <AuthModal />
+
+      {/* Armor Sets & Great Fairy Upgrade Planner Modal */}
+      <ArmorPlannerModal />
 
       {/* Floating Transition Toast for Chasm Dives and Ascends */}
       {transitionToast && (

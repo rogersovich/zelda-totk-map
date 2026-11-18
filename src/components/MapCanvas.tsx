@@ -2,9 +2,12 @@ import React, { useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import L from 'leaflet';
 import 'leaflet-rastercoords';
+import 'leaflet.markercluster';
+import 'leaflet.markercluster/dist/MarkerCluster.css';
 import { useMapStore } from '../store/useMapStore';
 import { MarkerPoint, DRAGONS, getCategoryTheme } from '../data';
 import { FARMING_ROUTES } from '../data/farmingRoutes';
+import { PROVINCE_BOUNDARIES } from '../data/provinceBoundaries';
 import { MarkerPopover } from './MarkerPopover';
 
 declare module 'leaflet' {
@@ -19,6 +22,7 @@ interface MapCanvasProps {
 const TILE_SIZE = 256;
 const MAP_SIZE = [24000, 20000];
 const MAP_VIEW_KEY = 'zelda_totk_map_view_v1';
+const DENSE_CLUSTER_CATEGORIES = new Set(['cave', 'bubbul', 'well', 'chasm']);
 
 // Subpixel seam fix: Expand tiles by 1px so adjacent tiles seamlessly overlap by 1 subpixel.
 // Completely eliminates browser Chromium/WebKit 1px grid lines/seams without canvas redraw bugs.
@@ -49,10 +53,13 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({ markers }) => {
   const mapInstanceRef = useRef<L.Map | null>(null);
   const currentTileLayerRef = useRef<L.TileLayer | null>(null);
   const markerLayerGroupRef = useRef<L.LayerGroup | null>(null);
+  const korokClusterGroupRef = useRef<L.MarkerClusterGroup | null>(null);
+  const denseClusterGroupRef = useRef<L.MarkerClusterGroup | null>(null);
   const dragonLayerGroupRef = useRef<L.LayerGroup | null>(null);
   const pathLayerGroupRef = useRef<L.LayerGroup | null>(null);
   const customPinLayerGroupRef = useRef<L.LayerGroup | null>(null);
   const farmingRouteLayerGroupRef = useRef<L.LayerGroup | null>(null);
+  const provinceLayerGroupRef = useRef<L.LayerGroup | null>(null);
   const mapBoundsRef = useRef<L.LatLngBounds | null>(null);
   const popupRef = useRef<L.Popup | null>(null);
   const popupContainerRef = useRef<HTMLDivElement>(document.createElement('div'));
@@ -62,6 +69,7 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({ markers }) => {
     activeCategories,
     searchQuery,
     showDragons,
+    showProvinceBoundaries,
     selectedZonaiPart,
     completedItems,
     hideCompleted,
@@ -172,13 +180,51 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({ markers }) => {
     });
 
     // Create layer groups
+    const provinceGroup = L.layerGroup().addTo(map);
     const markerGroup = L.layerGroup().addTo(map);
+    const korokClusterGroup = L.markerClusterGroup({
+      chunkedLoading: true,
+      maxClusterRadius: 55,
+      disableClusteringAtZoom: 6,
+      spiderfyOnMaxZoom: true,
+      showCoverageOnHover: false,
+      iconCreateFunction: (cluster) => {
+        const count = cluster.getChildCount();
+        const size = count >= 100 ? 38 : count >= 10 ? 34 : 30;
+        return L.divIcon({
+          html: `<div class="totk-cluster-badge is-korok"><span>🌿</span><span>${count}</span></div>`,
+          className: 'totk-cluster-icon',
+          iconSize: L.point(size, size),
+        });
+      },
+    }).addTo(map);
+
+    const denseClusterGroup = L.markerClusterGroup({
+      chunkedLoading: true,
+      maxClusterRadius: 48,
+      disableClusteringAtZoom: 6,
+      spiderfyOnMaxZoom: true,
+      showCoverageOnHover: false,
+      iconCreateFunction: (cluster) => {
+        const count = cluster.getChildCount();
+        const size = count >= 100 ? 38 : count >= 10 ? 34 : 30;
+        return L.divIcon({
+          html: `<div class="totk-cluster-badge is-dense"><span>📍</span><span>${count}</span></div>`,
+          className: 'totk-cluster-icon',
+          iconSize: L.point(size, size),
+        });
+      },
+    }).addTo(map);
+
     const dragonGroup = L.layerGroup().addTo(map);
     const pathGroup = L.layerGroup().addTo(map);
     const customPinGroup = L.layerGroup().addTo(map);
     const farmingGroup = L.layerGroup().addTo(map);
 
+    provinceLayerGroupRef.current = provinceGroup;
     markerLayerGroupRef.current = markerGroup;
+    korokClusterGroupRef.current = korokClusterGroup;
+    denseClusterGroupRef.current = denseClusterGroup;
     dragonLayerGroupRef.current = dragonGroup;
     pathLayerGroupRef.current = pathGroup;
     customPinLayerGroupRef.current = customPinGroup;
@@ -359,15 +405,57 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({ markers }) => {
     });
   }, [showDragons, activeLayer]);
 
+  // 4b. Render Province Boundary Overlays
+  useEffect(() => {
+    const provinceGroup = provinceLayerGroupRef.current;
+    if (!provinceGroup) return;
+    provinceGroup.clearLayers();
+
+    if (!showProvinceBoundaries || activeLayer === 'sky') return;
+
+    PROVINCE_BOUNDARIES.forEach((b) => {
+      const poly = L.polygon(b.polygon, {
+        color: b.color,
+        weight: 1.8,
+        dashArray: '6, 6',
+        opacity: 0.7,
+        fillColor: b.fillColor,
+        fillOpacity: 1,
+      });
+
+      poly.bindTooltip(
+        `<div class="text-[11px] font-bold tracking-wider uppercase" style="color: ${b.color}">${b.name}</div>`,
+        { sticky: true, className: 'totk-hover-tooltip', opacity: 0.95 }
+      );
+
+      poly.on('mouseover', () => {
+        poly.setStyle({ weight: 3, opacity: 0.95, fillOpacity: 1.6 });
+      });
+      poly.on('mouseout', () => {
+        poly.setStyle({ weight: 1.8, opacity: 0.7, fillOpacity: 1 });
+      });
+
+      poly.addTo(provinceGroup);
+    });
+  }, [showProvinceBoundaries, activeLayer]);
+
   // 5. Render Active Markers
   useEffect(() => {
     const markerGroup = markerLayerGroupRef.current;
+    const korokClusterGroup = korokClusterGroupRef.current;
+    const denseClusterGroup = denseClusterGroupRef.current;
     const pathGroup = pathLayerGroupRef.current;
     const map = mapInstanceRef.current;
-    if (!markerGroup || !pathGroup || !map) return;
+    if (!markerGroup || !korokClusterGroup || !denseClusterGroup || !pathGroup || !map) return;
 
     markerGroup.clearLayers();
+    korokClusterGroup.clearLayers();
+    denseClusterGroup.clearLayers();
     pathGroup.clearLayers();
+
+    const isSearching = searchQuery.trim().length > 0;
+    const korokMarkersToCluster: L.Marker[] = [];
+    const denseMarkersToCluster: L.Marker[] = [];
 
     const filtered = markers.filter((m) => {
       // Layer match
@@ -540,8 +628,21 @@ export const MapCanvas: React.FC<MapCanvasProps> = ({ markers }) => {
         }
       });
 
-      marker.addTo(markerGroup);
+      if (!isSearching && m.category === 'korok') {
+        korokMarkersToCluster.push(marker);
+      } else if (!isSearching && DENSE_CLUSTER_CATEGORIES.has(m.category)) {
+        denseMarkersToCluster.push(marker);
+      } else {
+        marker.addTo(markerGroup);
+      }
     });
+
+    if (korokMarkersToCluster.length > 0) {
+      korokClusterGroup.addLayers(korokMarkersToCluster);
+    }
+    if (denseMarkersToCluster.length > 0) {
+      denseClusterGroup.addLayers(denseMarkersToCluster);
+    }
   }, [
     markers,
     activeLayer,

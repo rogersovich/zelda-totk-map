@@ -96,6 +96,7 @@ interface SavedSettings {
   activeLayer?: MapLayer;
   activeCategories?: string[];
   showDragons?: boolean;
+  showProvinceBoundaries?: boolean;
   hideCompleted?: boolean;
   sidebarOpen?: boolean;
   selectedZonaiPart?: string | null;
@@ -124,6 +125,7 @@ function persistSettings(data: {
   activeLayer: MapLayer;
   activeCategories: Set<string>;
   showDragons: boolean;
+  showProvinceBoundaries?: boolean;
   hideCompleted: boolean;
   sidebarOpen: boolean;
   selectedZonaiPart: string | null;
@@ -134,6 +136,7 @@ function persistSettings(data: {
       activeLayer: data.activeLayer,
       activeCategories: Array.from(data.activeCategories),
       showDragons: data.showDragons,
+      showProvinceBoundaries: data.showProvinceBoundaries,
       hideCompleted: data.hideCompleted,
       sidebarOpen: data.sidebarOpen,
       selectedZonaiPart: data.selectedZonaiPart,
@@ -150,6 +153,7 @@ interface MapState {
   searchQuery: string;
   activeCategories: Set<string>;
   showDragons: boolean;
+  showProvinceBoundaries: boolean;
   selectedZonaiPart: string | null;
   selectedMarker: MarkerPoint | null;
   flyToTarget: { lat: number; lng: number; zoom?: number; markerId?: string } | null;
@@ -157,6 +161,7 @@ interface MapState {
   customPins: CustomPin[];
   pinModalTarget: { lat: number; lng: number; layer: MapLayer; existingPin?: CustomPin } | null;
   isAddingPinMode: boolean;
+  isArmorModalOpen: boolean;
   activeFarmingRouteId: string | null;
   completedItems: Record<string, boolean>;
   hideCompleted: boolean;
@@ -176,6 +181,9 @@ interface MapState {
   enableAllCategories: () => void;
   disableAllCategories: () => void;
   toggleDragons: () => void;
+  toggleProvinceBoundaries: () => void;
+  openArmorModal: () => void;
+  closeArmorModal: () => void;
   setSelectedZonaiPart: (part: string | null) => void;
   setSelectedMarker: (marker: MarkerPoint | null) => void;
   jumpToTwin: (twin: MarkerPoint['twin']) => void;
@@ -214,6 +222,7 @@ export const useMapStore = create<MapState>((set, get) => ({
     ? new Set(initialSettings.activeCategories)
     : new Set(DEFAULT_ACTIVE_CATEGORIES),
   showDragons: initialSettings.showDragons !== undefined ? initialSettings.showDragons : true,
+  showProvinceBoundaries: initialSettings.showProvinceBoundaries !== undefined ? initialSettings.showProvinceBoundaries : false,
   selectedZonaiPart: initialSettings.selectedZonaiPart || null,
   selectedMarker: null,
   flyToTarget: null,
@@ -221,6 +230,7 @@ export const useMapStore = create<MapState>((set, get) => ({
   customPins: getInitialCustomPins(),
   pinModalTarget: null,
   isAddingPinMode: false,
+  isArmorModalOpen: false,
   activeFarmingRouteId: initialSettings.activeFarmingRouteId || null,
   completedItems: getInitialCompleted(),
   hideCompleted: initialSettings.hideCompleted || false,
@@ -323,6 +333,7 @@ export const useMapStore = create<MapState>((set, get) => ({
       activeLayer: get().activeLayer,
       activeCategories: current,
       showDragons: next,
+      showProvinceBoundaries: get().showProvinceBoundaries,
       hideCompleted: get().hideCompleted,
       sidebarOpen: get().sidebarOpen,
       selectedZonaiPart: get().selectedZonaiPart,
@@ -330,6 +341,25 @@ export const useMapStore = create<MapState>((set, get) => ({
     });
     scheduleCloudSync(get);
   },
+
+  toggleProvinceBoundaries: () => {
+    const next = !get().showProvinceBoundaries;
+    set({ showProvinceBoundaries: next });
+    persistSettings({
+      activeLayer: get().activeLayer,
+      activeCategories: get().activeCategories,
+      showDragons: get().showDragons,
+      showProvinceBoundaries: next,
+      hideCompleted: get().hideCompleted,
+      sidebarOpen: get().sidebarOpen,
+      selectedZonaiPart: get().selectedZonaiPart,
+      activeFarmingRouteId: get().activeFarmingRouteId,
+    });
+    scheduleCloudSync(get);
+  },
+
+  openArmorModal: () => set({ isArmorModalOpen: true }),
+  closeArmorModal: () => set({ isArmorModalOpen: false }),
 
   setSelectedZonaiPart: (part) => {
     set({ selectedZonaiPart: part });
@@ -516,6 +546,10 @@ export const useMapStore = create<MapState>((set, get) => ({
         ? d1Settings.showDragons
         : get().showDragons;
 
+      const restoredProvinceBoundaries = d1Settings.showProvinceBoundaries !== undefined
+        ? d1Settings.showProvinceBoundaries
+        : get().showProvinceBoundaries;
+
       const restoredHideCompleted = d1Settings.hideCompleted !== undefined
         ? d1Settings.hideCompleted
         : get().hideCompleted;
@@ -532,6 +566,7 @@ export const useMapStore = create<MapState>((set, get) => ({
         activeLayer: restoredLayer,
         activeCategories: restoredCategories,
         showDragons: restoredDragons,
+        showProvinceBoundaries: restoredProvinceBoundaries,
         hideCompleted: restoredHideCompleted,
         sidebarOpen: restoredSidebarOpen,
         selectedZonaiPart: restoredZonaiPart,
@@ -546,6 +581,7 @@ export const useMapStore = create<MapState>((set, get) => ({
         activeLayer: restoredLayer,
         activeCategories: restoredCategories,
         showDragons: restoredDragons,
+        showProvinceBoundaries: restoredProvinceBoundaries,
         hideCompleted: restoredHideCompleted,
         selectedZonaiPart: restoredZonaiPart,
         activeFarmingRouteId: restoredRouteId,
@@ -580,6 +616,7 @@ export const useMapStore = create<MapState>((set, get) => ({
               activeLayer: state.activeLayer,
               activeCategories: Array.from(state.activeCategories),
               showDragons: state.showDragons,
+              showProvinceBoundaries: state.showProvinceBoundaries,
               hideCompleted: state.hideCompleted,
               selectedZonaiPart: state.selectedZonaiPart,
               activeFarmingRouteId: state.activeFarmingRouteId,
@@ -646,6 +683,7 @@ export const useMapStore = create<MapState>((set, get) => ({
             activeLayer: state.activeLayer,
             activeCategories: Array.from(state.activeCategories),
             showDragons: state.showDragons,
+            showProvinceBoundaries: state.showProvinceBoundaries,
             hideCompleted: state.hideCompleted,
             selectedZonaiPart: state.selectedZonaiPart,
             activeFarmingRouteId: state.activeFarmingRouteId,
@@ -702,6 +740,10 @@ export const useMapStore = create<MapState>((set, get) => ({
             ? cloudSettings.showDragons
             : get().showDragons;
 
+          const restoredProvinceBoundaries = cloudSettings.showProvinceBoundaries !== undefined
+            ? cloudSettings.showProvinceBoundaries
+            : get().showProvinceBoundaries;
+
           const restoredHideCompleted = cloudSettings.hideCompleted !== undefined
             ? cloudSettings.hideCompleted
             : get().hideCompleted;
@@ -718,6 +760,7 @@ export const useMapStore = create<MapState>((set, get) => ({
             activeLayer: restoredLayer,
             activeCategories: restoredCategories,
             showDragons: restoredDragons,
+            showProvinceBoundaries: restoredProvinceBoundaries,
             hideCompleted: restoredHideCompleted,
             sidebarOpen: restoredSidebarOpen,
             selectedZonaiPart: restoredZonaiPart,
@@ -730,6 +773,7 @@ export const useMapStore = create<MapState>((set, get) => ({
             activeLayer: restoredLayer,
             activeCategories: restoredCategories,
             showDragons: restoredDragons,
+            showProvinceBoundaries: restoredProvinceBoundaries,
             hideCompleted: restoredHideCompleted,
             selectedZonaiPart: restoredZonaiPart,
             activeFarmingRouteId: restoredRouteId,
